@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang_flexform_pi1.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>flexform</type>
+		<description>Language labels for plugin flexform &quot;tx_icsoddatastore_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="configuration">Configuration</label>
+			<label index="what_to_display">Display mode</label>
+			<label index="template_file">Template file</label>
+			<label index="nbFileGroupByPage">Max records</label>
+			<label index="list_setting">List setting</label>
+			<label index="fileLink">File link</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="configuration">Configuration</label>
+			<label index="what_to_display">Mode d'affichage</label>
+			<label index="template_file">Fichier template</label>
+			<label index="nbFileGroupByPage">Nombre maximum d'enregistrements par page</label>
+			<label index="list_setting">Vue liste</label>
+			<label index="fileLink">Lien vers fichiers</label>
+		</languageKey>
+	</data>
+</T3locallang>

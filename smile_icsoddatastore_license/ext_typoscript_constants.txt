@@ -1,0 +1,1 @@
+plugin.smile_icsoddatastore_license.cguLink = fileadmin/cgu.txt

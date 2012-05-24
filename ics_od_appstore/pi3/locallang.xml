@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_icsodappstore_pi3&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="nologin">Any user are connected.</label>
+			<label index="application_not_exists">An error occured. The application does not exists.</label>
+			<label index="titre">Statistics table</label>
+			<label index="date">Date</label>
+			<label index="command">Command</label>
+			<label index="count">Call</label>
+			<label index="next">Next 30 days</label>
+			<label index="previous">Previous 30 days</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="nologin">Merci de vous identifier, pour pouvoir accéder aux statistiques.</label>
+			<label index="application_not_exists">L'application n'existe pas.</label>
+			<label index="titre">Tableau des statistiques</label>
+			<label index="date">Date</label>
+			<label index="command">Commande</label>
+			<label index="count">Appel</label>
+			<label index="next">30 jours Suivant</label>
+			<label index="previous">30 jours Précédent</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="fr" type="array">
+			<label index="titre" type="integer">31259119</label>
+			<label index="date" type="integer">71780721</label>
+			<label index="command" type="integer">250182624</label>
+			<label index="count" type="integer">204953062</label>
+			<label index="next" type="integer">245780231</label>
+			<label index="previous" type="integer">153074969</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="fr" type="array">
+			<label index="titre">Statistics table</label>
+			<label index="date">Date</label>
+			<label index="command">Command</label>
+			<label index="count">Call</label>
+			<label index="next">Next 30 days</label>
+			<label index="previous">Previous 30 days</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

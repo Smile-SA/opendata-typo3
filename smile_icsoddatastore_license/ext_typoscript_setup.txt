@@ -1,0 +1,19 @@
+plugin.tx_icsoddatastore_pi1 {
+	cguLink = {$plugin.smile_icsoddatastore_license.cguLink}
+	_LOCAL_LANG.fr {
+		btn_registration = valider
+		cgu_label = En cochant cette case pour télécharger le fichier, j’accepte les CGU et les conditions de la licence
+		cgu_link_label = Consulter les conditions générales d’utilisation (CGU) et la licence
+		accept_license_to_download = Acceptez les conditions générales d’utilisation et la licence afin d'accéder aux données
+	}
+}
+
+plugin.tx_icsodappstore_pi2 {
+  cguLink = {$plugin.smile_icsoddatastore_license.cguLink}
+	_LOCAL_LANG.fr {
+		btn_registration = valider
+		cgu_label = En cochant cette case pour télécharger le fichier, j’accepte les CGU et les conditions de la licence
+		cgu_link_label = Consulter les conditions générales d’utilisation (CGU) et la licence
+		accept_license_to_download = Acceptez les conditions générales d’utilisation et la licence afin d'accéder aux données
+	}
+}

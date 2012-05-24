@@ -1,0 +1,9 @@
+plugin.tx_smileicsoddatastorerss_pi1 {
+	site_description = 
+	site_lang = en
+	generator = TYPO3 - get.content.right
+	docs = http://blogs.law.harvard.edu/tech/rss
+	copyright = 
+	webmaster = 
+	managingeditor = 
+}

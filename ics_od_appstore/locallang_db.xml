@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'ics_od_appstore'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_icsodappstore_applications">Open Data applications</label>
+			<label index="tx_icsodappstore_applications.apikey">Application's key</label>
+			<label index="tx_icsodappstore_applications.title">Title</label>
+			<label index="tx_icsodappstore_applications.description">Description</label>
+			<label index="tx_icsodappstore_applications.platform">Platform</label>
+			<label index="tx_icsodappstore_applications.countcall">Count call</label>
+			<label index="tx_icsodappstore_applications.maxcall">Max call</label>
+			<label index="tx_icsodappstore_applications.release_date">Release date</label>
+			<label index="tx_icsodappstore_applications.publish">Publish</label>
+			<label index="tx_icsodappstore_applications.logo">Logo</label>
+			<label index="tx_icsodappstore_applications.screenshot">Screenshots</label>
+			<label index="tx_icsodappstore_applications.link">Link</label>
+			<label index="tx_icsodappstore_applications.update_date">Update date</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.0">Open</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.1">Closed</label>
+			<label index="tx_icsodappstore_applications.lock_publication">Lock publication</label>
+			<label index="tx_icsodappstore_logs">Open Data logs</label>
+			<label index="tx_icsodappstore_logs.application">Application</label>
+			<label index="tx_icsodappstore_logs.ip">IP</label>
+			<label index="tx_icsodappstore_logs.cmd">API's command</label>
+			<label index="tx_icsodappstore_month_logs">Open Data month logs</label>
+			<label index="tx_icsodappstore_month_logs.application">Application</label>
+			<label index="tx_icsodappstore_month_logs.ip">IP</label>
+			<label index="tx_icsodappstore_month_logs.cmd">API's command</label>
+			<label index="tx_icsodappstore_statistics">Statistics</label>
+			<label index="tx_icsodappstore_statistics.application">Application</label>
+			<label index="tx_icsodappstore_statistics.cmd">API's command</label>
+			<label index="tx_icsodappstore_statistics.count">Count calls</label>
+			<label index="tx_icsodappstore_statistics.date">Date</label>
+			<label index="tt_content.list_type_pi1">Display devloppers applications list</label>
+			<label index="tt_content.list_type_pi2">Application form</label>
+			<label index="tt_content.list_type_pi3">Statistics</label>
+			<label index="tt_content.list_type_pi4">Applications store</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tx_icsodappstore_applications">Applications de l'Open Data</label>
+			<label index="tx_icsodappstore_applications.apikey">Clé d'application</label>
+			<label index="tx_icsodappstore_applications.title">Nom</label>
+			<label index="tx_icsodappstore_applications.description">Description</label>
+			<label index="tx_icsodappstore_applications.platform">Plateforme</label>
+			<label index="tx_icsodappstore_applications.countcall">Compteur d'appels</label>
+			<label index="tx_icsodappstore_applications.maxcall">Limite d'appels</label>
+			<label index="tx_icsodappstore_applications.release_date">Date de publication</label>
+			<label index="tx_icsodappstore_applications.publish">Application publiée</label>
+			<label index="tx_icsodappstore_applications.logo">Logo</label>
+			<label index="tx_icsodappstore_applications.screenshot">Captures d'écrans</label>
+			<label index="tx_icsodappstore_applications.link">Lien</label>
+			<label index="tx_icsodappstore_applications.update_date">Dernière mise à jour</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.0">Débloquer</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.1">Bloquer</label>
+			<label index="tx_icsodappstore_applications.lock_publication">Vérrou de publication</label>
+			<label index="tx_icsodappstore_logs">Logs d'Open data</label>
+			<label index="tx_icsodappstore_logs.application">Application</label>
+			<label index="tx_icsodappstore_logs.ip">IP</label>
+			<label index="tx_icsodappstore_logs.cmd">Commande d'API</label>
+			<label index="tx_icsodappstore_month_logs">Logs mensuel d'Open data</label>
+			<label index="tx_icsodappstore_month_logs.application">Application</label>
+			<label index="tx_icsodappstore_month_logs.ip">IP</label>
+			<label index="tx_icsodappstore_month_logs.cmd">Commande d'API</label>
+			<label index="tx_icsodappstore_statistics">Statistiques</label>
+			<label index="tx_icsodappstore_statistics.application">Application</label>
+			<label index="tx_icsodappstore_statistics.cmd">Commande d'API</label>
+			<label index="tx_icsodappstore_statistics.count">Compteur d'appels</label>
+			<label index="tx_icsodappstore_statistics.date">Date d'appel</label>
+			<label index="tt_content.list_type_pi1">Affiche la liste des applications développeurs</label>
+			<label index="tt_content.list_type_pi2">Formulaire d'application</label>
+			<label index="tt_content.list_type_pi3">Statistiques</label>
+			<label index="tt_content.list_type_pi4">Catalogue d'applications</label>
+		</languageKey>
+	</data>
+</T3locallang>

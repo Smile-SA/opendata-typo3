@@ -1,0 +1,15 @@
+# $Id: constants.txt 48432 2011-06-07 09:27:20Z emilieprudhomme $
+
+config.tx_icsoddatastore_pi2 {
+  # cat=plugin.tx_icsoddatastore_pi2/other/a; type=int; label= Type Num : Page type number where the RSS feed will be generated
+  typeNum = 20
+  
+  # cat=plugin.tx_icsoddatastore_pi2/other/b; type=string; label= RSS Charset : RSS Charset
+  charset = iso-8859-1
+  
+  # cat=plugin.tx_icsoddatastore_pi2/other/c; type=string; label= RSS Title : RSS Title
+  title = Latest dataset
+  
+  # cat=plugin.tx_icsoddatastore_pi2/file/a; type=file[html]; label=Template to use: The template file to use.
+	templateFile = EXT:ics_od_datastore/res/rss2_tmplFile.tmpl
+}

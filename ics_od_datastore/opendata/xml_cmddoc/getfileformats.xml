@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Id: getfileformats.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<command name="Get file formats" cmd="datastore_getfileformats" brief="Retrieves file formats.">
+	<description>Retrieves datastore serachable files formats.</description>
+</command>

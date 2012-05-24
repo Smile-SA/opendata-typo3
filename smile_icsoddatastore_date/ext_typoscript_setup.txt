@@ -1,0 +1,12 @@
+plugin.tx_icsoddatastore_pi1 {
+	templateFile = EXT:smile_icsoddatastore_date/res/exemple_template_datastore.html
+	displaySearch {
+		dateFormat = d/m/Y
+	}
+	_LOCAL_LANG.fr {
+		search_dateTitle = Date de mise à jour postérieure au :
+		search_dateSubTitle = (jj/mm/aaaa)
+		search_dateImgAlt = Sélecteur de date
+		date_error_format = Le format de la date saisie est incorrect (jj/mm/aaaa) !
+	}
+}

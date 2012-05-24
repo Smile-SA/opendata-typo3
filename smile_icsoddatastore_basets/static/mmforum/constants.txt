@@ -1,0 +1,38 @@
+plugin.tx_mmforum {
+	substitutePagetitle = 1
+	userNameField = name
+	useCaptcha = 0
+	mailer_mail = reply@domain.com
+	site_name = Site name
+	support_mail = reply@domain.com
+	team_name = Site name team
+	realUrl_specialLinks = 1
+	#path_template = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/
+	#style_path = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/default/
+	#postparser.insertButton_path = EXT:smile_icsoddatastore_basets/res/mm_forum/img/default/editor_icons/
+	#path_smilie = EXT:smile_icsoddatastore_basets/res/mm_forum/smilies/
+	#path_img = EXT:smile_icsoddatastore_basets/res/mm_forum/img/default/
+	resultsPerPage = 10
+	sword_minLength = 2
+	indexCount = 50
+	# Md5 password
+	indexingPassword = 
+	attachment_preview = 0
+	polls_enable = 0
+	attachment_filesize = 512000
+	attachment_deny = php,php3,php4,php5,exe,bat
+	attachment_allow = gif,jpg, png
+	enableRanks = 0
+	rssPID = 0
+	notifyMail_sender = reply@domain.com
+	userProfilePID = 0
+	boardPID = 71
+	boardName = Domain
+	displayRealName = 0
+	user_hotPosts = 50000
+	pmEnabled = 0
+	dateFormat = <!-- --> le %d %B %Y à %H:%M
+	attachment_enable = 0
+	# Uid of the page storing forum records
+	storagePID = 
+}

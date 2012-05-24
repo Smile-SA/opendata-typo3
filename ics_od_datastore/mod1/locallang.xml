@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;file_txicsopendatastoreM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Datastore group files</label>
+			<label index="new_filegroup">New filegroup</label>
+			<label index="error_nofilegroup">The selected filegroup is not a valid filegroup. Please, select one is the left pane.</label>
+			<label index="info_selectfilegroup">Please, select a filegroup in the left pane.</label>
+			<label index="error_noselect">You do not have the right to access to filegroup records.</label>
+			<label index="error_nosysfolder">Specify a sysfolder at least for file groups records. Configure the option "contains plugin" with "Datastore" in sysfolder properties.</label>
+			<label index="description">Description :</label>
+			<label index="technical_data">Technical data :</label>
+			<label index="agency">Agency :</label>
+			<label index="category">Category :</label>
+			<label index="contact">Contact :</label>
+			<label index="licence">Licence :</label>
+			<label index="release_date">Release date :</label>
+			<label index="update_date">Update :</label>
+			<label index="time_period">Time period :</label>
+			<label index="update_frequency">Frequency :</label>
+			<label index="publisher">Publisher :</label>
+			<label index="creator">Creator :</label>
+			<label index="manager">Manager :</label>
+			<label index="owner">Owner :</label>
+			<label index="newFile">New file</label>
+			<label index="editFile">Edit filegroup</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="title">Entrepôt de fichiers</label>
+			<label index="new_filegroup">Nouvelle fiche</label>
+			<label index="error_nofilegroup">La fiche sélectionné n'est pas valide. Veuillez en sélectioner une dans la panneau de gauche.</label>
+			<label index="info_selectfilegroup">Veuillez sélectionner une fiche dans le panneau de gauche.</label>
+			<label index="error_noselect">Vous n'avez pas les accès aux enregistrements de la fiche.</label>
+			<label index="error_nosysfolder">Précisez au moins un dossier de stockage pour les enregistrements des fiches. Configurez l'option "contient le plugin" à "entrepôt" dans les propriétés du dossier de stockage.</label>
+			<label index="description">Description :</label>
+			<label index="technical_data">Données technique :</label>
+			<label index="agency">Agence :</label>
+			<label index="category">Catégorie :</label>
+			<label index="contact">Contact :</label>
+			<label index="licence">Licence :</label>
+			<label index="release_date">Mise à disposition :</label>
+			<label index="update_date">Mise à jour :</label>
+			<label index="time_period">Période de validité :</label>
+			<label index="update_frequency">Fréquence :</label>
+			<label index="publisher">Editeur :</label>
+			<label index="creator">Créateur :</label>
+			<label index="manager">Gestionnaire :</label>
+			<label index="owner">Propriétaire :</label>
+			<label index="newFile">Ajouter un fichier</label>
+			<label index="editFile">Editer la fiche</label>
+		</languageKey>
+	</data>
+</T3locallang>

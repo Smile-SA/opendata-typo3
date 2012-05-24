@@ -1,0 +1,60 @@
+# FE login 
+plugin.tx_felogin_pi1 {
+	email_from = {$email_from}
+	email_fromName = 
+	dateFormat = d/m/Y H:i
+
+	_LOCAL_LANG.fr {
+		ll_welcome_header = vous disposez d'un compte, authentifiez vous :
+		ll_logout_header = vous disposez d'un compte, authentifiez vous :
+		ll_error_header = vous disposez d'un compte, authentifiez vous :
+		ll_success_header = vous êtes maintenant connecté :
+		ll_status_header = votre état actuel :
+		ll_change_password_header = modifiez votre mot de passe :
+		ll_forgot_header = vous avez oublié votre mot de passe ?
+		
+		ll_welcome_message = 
+		ll_logout_message = Vous vous êtes déconnecté avec succès.
+		ll_error_message (
+Une erreur est survenue durant la connexion. Vraisemblablement le nom d'utilisateur ou le mot de passe étaient faux.
+Faites attention à être précis, en particulier en ce qui concerne l'usage des minuscules et des majuscules.
+Il est aussi possible que les cookies soient désactivés sur votre navigateur.
+)
+		ll_success_message = Vous êtes maintenant connecté en tant que ###USER###.
+		ll_status_message = Votre état actuel :
+		ll_change_password_message = Veuillez saisir votre nouveau mot de passe deux fois. Les mots de passe doivent avoir une longueur minimum de %s caractères.
+		ll_change_password_nolinkprefix_message = Erreur !
+		ll_change_password_notvalid_message = Le lien sur lequel vous venez de cliquer n'est pas valide. Veuillez recommencer la procédure.
+		ll_change_password_notequal_message = Les mots de passe diffèrent. Veuillez saisir votre nouveau mot de passe deux fois. Les mots de passe doivent avoir une longueur minimum de %s caractères.
+		ll_change_password_tooshort_message = Le mot de passe est trop court. Veuillez saisir votre nouveau mot de passe deux fois. Les mots de passe doivent avoir une longueur minimum de %s caractères.
+		ll_change_password_done_message = Votre mot de passe a été enregistré. Vous pouvez maintenant vous connecter avec votre nouveau mot de passe.
+		ll_forgot_message = Veuillez indiquer l'adresse mail que vous avez utilisée lors de la création de votre compte. Appuyez ensuite sur le bouton "valider" et votre mot de passe vous sera directement envoyé par courrier électronique. Veillez à saisir correctement votre adresse mail.
+		ll_forgot_message_emailSent = Votre mot de passe a été envoyé à l'adresse %s.
+		ll_forgot_reset_message = Veuillez saisir votre adresse mail. Les instructions utiles à la réinitialisation de votre mot de passe vous seront immédiatement envoyées par mail.
+		ll_forgot_reset_message_emailSent = Un mail a été envoyé à l'adresse correspondant à votre compte. Ce mail contient un lien vous permettant de réinitialiser votre mot de passe. Si vous ne recevez pas de mail, c'est que votre compte ou votre adresse mail n'a pas été trouvé.
+		ll_forgot_header_backToLogin = retourner au formulaire d'authentification
+		ll_enter_your_data = Adresse mail :
+		
+		username = Adresse mail :
+		password = Mot de passe :
+		login = valider
+		reset_password = valider
+		send_password = valider
+		change_password = valider
+		ll_forgot_validate_reset_password (
+Nouveau mot de passe
+Bonjour,
+
+Ce message fait suite à une demande de réinitialisation de votre mot de passe. Veuillez cliquer sur le lien ci-dessous :
+<%2$s>
+(ou bien copier & coller l'adresse de ce lien dans un navigateur).
+
+Pour des raisons de sécurité, ce lien ne sera plus actif après le %3$s. Passé ce délai, vous devrez recommencer la procédure de réinitialisation de mot de passe.
+
+Cordialement,
+)
+		newpassword_label1 = Saisissez le nouveau mot de passe :
+		newpassword_label2 = Saisissez une seconde fois le nouveau mot de passe :
+		ll_change_password_done_message = Votre mot de passe a été enregistré. Vous pouvez maintenant vous connecter avec votre nouveau mot de passe.
+	}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;tools_txicsodcoreapiM1&quot; - header, description</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="mlang_tabs_tab">Commands documentation</label>
+			<label index="mlang_labels_tabdescr">Documentation of API commands</label>
+			<label index="mlang_labels_tablabel">cmddocs</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="mlang_tabs_tab">Documentation des commandes</label>
+			<label index="mlang_labels_tabdescr">Documentation des commandes de l'API</label>
+			<label index="mlang_labels_tablabel">cmddocs</label>
+		</languageKey>
+	</data>
+</T3locallang>

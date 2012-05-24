@@ -1,0 +1,254 @@
+<!-- $Id: template.html 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+
+<!-- ###TEMPLATE_APPLICATION_FORM### start-->
+<form class="form" method="post" action="###URL###"  enctype="multipart/form-data" >
+	<fieldset title="###TITLE_FORM_APPLICATION###">
+		<legend class="hide">###TITLE_FORM_APPLICATION###</legend>
+			
+	<!-- ###TEMPLATE_ERRORS### start-->
+	<p class="error">###ERROR_MSG###</p>
+	<!-- ###TEMPLATE_ERRORS### end-->
+		<div>
+			<label for="name">###APPLICATION_LABEL###</label>
+			<input type="text" name="###APPLICATION###" id="name" value="###APPLICATION_VALUE###" />
+		</div>
+		<div>
+			<label for="description" style="vertical-align: top;">###DESCRIPTION_LABEL###</label>
+			<textarea cols="50" rows="10" name="###DESCRIPTION###" id="description">###DESCRIPTION_VALUE###</textarea>
+		</div>
+		<div>
+			<label for="platform">###PLATFORM_LABEL###</label>
+			<input type="text" name="###PLATFORM###" value="###PLATFORM_VALUE###" id="platform" />
+		</div>
+		<!-- ###TEMPLATE_LOGO### begin-->
+		<div class="file">
+			<label for="logo">###LOGO_LABEL###</label>
+			<input type="hidden" name="###LOGO_NAME###" value="###LOGO_VALUE###" />
+			<!-- ###LOGO_ADD### begin-->
+			<input type="file" name="###LOGO_ADD_NAME###"  />
+			<!-- ###LOGO_ADD### end-->
+			<span class="information">###LOGO_MAXSIZE_LABEL### : ###LOGO_MAXSIZE###</span>
+			
+			<div class="files">
+				<!-- ###LOGO_EXIST### begin-->
+				<div class="filedelete">
+					###IMAGE###
+					<input id="logo_###INDICE###" type="checkbox" class="checkbox" name="###LOGO_DELETE_NAME###" value="###LOGO_DELETE_VALUE###" />
+					<label for="logo_###INDICE###">###LOGO_DELETE_LABEL###</label>
+				</div>
+				<!-- ###LOGO_EXIST### end-->
+			</div>
+		</div>
+		<!-- ###TEMPLATE_LOGO### end-->
+		<!-- ###TEMPLATE_SCREENSHOT### begin-->
+		<div class="file">
+			<label for="SCREENSHOT">###SCREENSHOT_LABEL###</label>
+			<input type="hidden" name="###SCREENSHOT_NAME###" value="###SCREENSHOT_VALUE###" />
+			<!-- ###SCREENSHOT_ADD### begin-->
+			<input type="file" name="###SCREENSHOT_ADD_NAME###"  />
+			<!-- ###SCREENSHOT_ADD### end-->
+			<span class="information">###SCREENSHOT_MAXSIZE_LABEL### : ###SCREENSHOT_MAXSIZE###</span>
+			
+			<div class="files">
+				<!-- ###SCREENSHOT_EXIST### begin-->
+				<div class="filedelete">
+					###IMAGE###
+					<input id="SCREENSHOT_###INDICE###" type="checkbox" class="checkbox" name="###SCREENSHOT_DELETE_NAME###" value="###SCREENSHOT_DELETE_VALUE###" />
+					<label for="SCREENSHOT_###INDICE###">###SCREENSHOT_DELETE_LABEL###</label>
+				</div>
+				<!-- ###SCREENSHOT_EXIST### end-->
+			</div>
+		</div>
+		<!-- ###TEMPLATE_SCREENSHOT### end-->
+		<div style="clear: both;">
+			<label for="link">###LINK_LABEL###</label>
+			<input type="text" name="###LINK###" value="###LINK_VALUE###" id="link" />
+		</div>
+		<div>
+			<label>###PUBLISH_LABEL###</label>
+			<input type="checkbox" class="checkbox" name="###PUBLISH###" ###PUBLISH_CHECKED### />
+			<span class="information publication">###LAST_PUBLICATION###</span>
+		</div>
+		<div>
+			<input type="hidden" name="###UID###" value="###UID_VALUE###" id="uid" />
+		</div>
+		<div class="bouton">
+			<input type="submit" name="###BTN_REGISTRATION###" value="###BTN_REGISTRATION_VALUE###" onClick="return(valid_application_form());"/>
+			
+		</div>
+	</fieldset>
+</form>
+<p class="back"><a href="###BACK_URL###">###BACK###</a></p>
+<!-- ###TEMPLATE_APPLICATION_FORM### end-->
+
+<!-- ###TEMPLATE_APPLICATION_FORM_SUCCES### start-->
+<!-- ###TEMPLATE_MESSAGES### start-->
+<p class="succes">###MESSAGE###</p>
+<!-- ###TEMPLATE_MESSAGES### end -->
+<p class="back"><a href="###BACK_URL###">###BACK###</a></p>
+<!-- ###TEMPLATE_APPLICATION_FORM_SUCCES### end-->
+
+
+
+<!-- ###TEMPLATE_APPLICATION_LIST### start-->
+<!-- ###TEMPLATE_ERRORS### start-->
+	<p class="error">###ERROR_MSG###</p>
+	<!-- ###TEMPLATE_ERRORS### end-->
+<!-- ###TEMPLATE_EMPTY### start-->
+<p class="message">###MESSAGE###</p>
+<!-- ###TEMPLATE_EMPTY### end-->
+<p class="create"><a href="###LINK_CREATE###">###CREATE###</a></p>
+
+	
+<!-- ###TEMPLATE_NOT_EMPTY### start-->
+<table class="application_list">
+		<caption>###APPLICATION_CAPTION###</caption>
+		<!-- ###APPLICATION_TITLE### start -->
+		<tr class="entete">
+			<th>###TITLE_LOGO###</th>
+			<th>###TITLE_NOM###</th>
+			<th>###TITLE_KEY###</th>
+			<!--<th>###TITLE_DESCRIPTION###</th>-->
+			<th>###TITLE_PLATFORM###</th>
+			<th>###TITLE_PUBLISH###</th>
+			<th>###TITLE_ACTIONS###</th>
+		</tr>
+		<!-- ###APPLICATION_TITLE### end -->
+		<!-- ###APPLICATION_ITEM### start -->
+		<tr class="ligne">
+			<td>###LOGO###</td>
+			<td>###NOM###</td>
+			<td>###KEY###</td>
+			<!--<td>###DESCRIPTION###</td>-->
+			<td>###PLATFORM###</td>
+			<td>###PUBLISH###</td>
+			<td class="actions">
+				<!-- ###APPLICATION_PUBLISH### --><p><a href="###LINK_PUBLISH###">###LABEL_PUBLISH###</a></p><!-- ###APPLICATION_PUBLISH### -->
+				<p><a href="###LINK_MODIF###">###LABEL_MODIF###</a></p>
+				<p><a href="###LINK_VIEW###" target="_blank">###LABEL_VIEW###</a></p>
+				<p><a href="###LINK_STAT###">###LABEL_STAT###</a></p>
+			</td>
+		</tr>
+		<!-- ###APPLICATION_ITEM### end -->
+	
+</table>
+<!-- ###TEMPLATE_NOT_EMPTY### end-->
+<!-- ###TEMPLATE_APPLICATION_LIST### end-->
+
+
+
+<!-- ###TEMPLATE_CATALOG_APPLICATION### start -->
+
+	<!-- ###LIST### start -->
+		<div class="content-softs">
+			<div class="header-softs">
+				<p class="sort-softs">Affichage : ###SORT###</p>
+				<p class="pages-softs">
+					<!-- ###HIDE_FIRST_PAGE### start --><a href="###FIRST_PAGE_LINK###"><<</a> <!-- ###HIDE_FIRST_PAGE### start -->
+					###PAGES### 
+					<!-- ###HIDE_LAST_PAGE### start --><a href="###LAST_PAGE_LINK###">>></a><!-- ###HIDE_LAST_PAGE### start -->
+				</p>
+			</div>
+		<!-- ###COLS### start -->
+			<div class="col-soft col-soft-###NUM_COL###">
+			<!-- ###ROWS### start -->
+				<div class="content-soft content-soft-###NUM_ROW###">
+					<div class="soft-logo">
+						###LOGO###
+						<div class="soft-logo-mask">
+						</div>
+					</div>
+					
+					<div class="soft-infos">
+						<h3>###APPLICATION###</h3>
+						<h4>publiée par <span class="highlight">###PUBLISHER###</span> le <span class="highlight">###PUBLISH_DATE###</span> <!--<span style="float:right">(téléchargé <span class="highlight">###DOWNLOAD###</span> fois)</span>--></h4>
+						
+						<p>###DESCRIPTION###</p>
+					</div>
+					<div class="link"><a href="###LINK###"><img src="fileadmin/icsopendata/templates/styles/img/more.jpg"/></a></div>
+				</div>
+			<!-- ###ROWS### end -->
+			</div>
+		<!-- ###COLS### end -->
+			<div class="footer-softs">
+				<p class="pages-softs">
+					<!-- ###HIDE_FIRST_PAGE### start --><a href="###FIRST_PAGE###"><<</a> <!-- ###HIDE_FIRST_PAGE### start -->
+					###PAGES### 
+					<!-- ###HIDE_LAST_PAGE### start --><a href="###LAST_PAGE###">>></a><!-- ###HIDE_LAST_PAGE### start -->
+				</p>
+			</div>
+		</div>
+	<!-- ###LIST### end -->
+	<!-- ###DETAIL### start -->
+		<div class="detail-soft">
+			<div class="header-softs">
+				<p class="pages-softs">
+					<a href="###BACK###">Retour au catalogue >></a>
+				</p>
+			</div>
+			<div class="content-soft">
+				<div class="title-soft">
+					<div class="soft-logo">
+						###LOGO###
+						<div class="soft-logo-mask">
+						</div>
+					</div>
+					<h3>###APPLICATION###</h3>
+					<h4>publiée par <span class="highlight">###PUBLISHER###</span> le <span class="highlight">###PUBLISH_DATE###</span><!--<br />(téléchargé <span class="highlight">###DOWNLOAD###</span> fois)--></h4>
+				</div>
+					
+				<div class="soft-infos">
+					<h4>Description de l'appication</h4>
+					<p>###DESCRIPTION###</p>
+					<div class="link">###LINK###</div>
+				</div>
+				###SCREENSHOT###
+			</div>
+			<div class="footer-softs">
+				<p class="pages-softs">
+					<a href="###BACK###">Retour au catalogue >></a>
+				</p>
+			</div>
+		</div>
+	<!-- ###DETAIL### end -->
+<!-- ###TEMPLATE_CATALOG_APPLICATION### end -->
+
+
+
+
+
+
+<!-- ###TEMPLATE_STATISTIQUE### start -->
+<table id="opendatastat" >
+		<caption>###CAPTION###</caption>
+		<!-- ###STATISTIQUE_TITLE### start -->
+		<tr class="entete">
+			<th>###TITLE_DATE###</th>
+			<th>###TITLE_COMMAND###</th>
+			<th>###TITLE_COUNT###</th>
+		</tr>
+		<!-- ###STATISTIQUE_TITLE### end -->
+		<!-- ###STATISTIQUE_ITEM### start -->
+		<tr class="ligne">
+			<td>###DATE###</td>
+			<td>###COMMAND###</td>
+			<td>###COUNT###</td>
+		</tr>
+		<!-- ###STATISTIQUE_ITEM### end -->
+</table>
+<form class="form" method="post" action="###URL###">
+	<div class="bouton">
+		<input type="submit" name="###BTN_PREVIOUS###" value="###BTN_PREVIOUS_VALUE###" ###DISPLAY_PREVIOUS### />
+		<input type="submit" name="###BTN_NEXT###" value="###BTN_NEXT_VALUE###" ###DISPLAY_NEXT### />
+	</div>
+	<input type="hidden" name="###DATE###" value="###DATE_VALUE###" />
+</form>
+<!-- ###TEMPLATE_STATISTIQUE### end -->
+
+
+
+
+
+<!-- ###TEMPLATE_ERROR### start -->
+<div class="tx-icsopendataapi-error">###ERROR_MSG###</div>
+<!-- ###TEMPLATE_ERROR### end -->

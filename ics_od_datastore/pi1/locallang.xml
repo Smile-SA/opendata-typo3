@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_icsoddatastore_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="th_title">Title</label>
+			<label index="th_description">Description</label>
+			<label index="th_technical_data">Technical data</label>
+			<label index="th_files">Files</label>
+			<label index="th_agency">Agency</label>
+			<label index="th_content">Contact</label>
+			<label index="th_licence">Licence</label>
+			<label index="th_release_date">Release date</label>
+			<label index="th_update_date">Update date</label>
+			<label index="th_time_period">Time period</label>
+			<label index="th_update_frequency">Update frequency</label>
+			<label index="th_publisher">Publisher</label>
+			<label index="th_creator">Creator</label>
+			<label index="th_manager">Manager</label>
+			<label index="th_owner">Owner</label>
+			<label index="th_fileformat">Format :</label>
+			<label index="th_tstamp">Updated</label>
+			<label index="detail_title">Title : </label>
+			<label index="detail_description">Description : </label>
+			<label index="detail_technical_data">Technical data : </label>
+			<label index="detail_files">Files : </label>
+			<label index="detail_agency">Agency : </label>
+			<label index="detail_content">Contact : </label>
+			<label index="detail_licence">Licence : </label>
+			<label index="detail_release_date">Release date : </label>
+			<label index="detail_update_date">Update date : </label>
+			<label index="detail_time_period">Time period : </label>
+			<label index="detail_update_frequency">Update frequency : </label>
+			<label index="detail_publisher">Publisher : </label>
+			<label index="detail_creator">Creator : </label>
+			<label index="detail_manager">Manager : </label>
+			<label index="detail_owner">Owner : </label>
+			<label index="detail_intro">Sheet details</label>
+			<label index="detail_other_data">Sheet other data</label>
+			<label index="detail_formatavailable">Format available : </label>
+			<label index="detail_contact">Contact</label>
+			<label index="detail_uid">Identifiant</label>
+			<label index="back">Back</label>
+			<label index="search_keywords">Keyword</label>
+			<label index="search_submit">Submit</label>
+			<label index="search_fileformatTitle">Search by file type</label>
+			<label index="search_agencyTitle">Search by agency</label>
+			<label index="search_tiersTitle">Search by agency</label>
+			<label index="search_fileFormatOther">Other</label>
+			<label index="fileformat">File format</label>
+			<label index="rss_alt">Lien to RSS page</label>
+			<label index="rss_title">Lien to RSS page</label>
+			<label index="rss_text">RSS feed</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="th_title">Résultat de la recherche</label>
+			<label index="th_description">Description</label>
+			<label index="th_technical_data">Données techniques</label>
+			<label index="th_files">Fichiers</label>
+			<label index="th_agency">Département</label>
+			<label index="th_content">Contact</label>
+			<label index="th_licence">Licence</label>
+			<label index="th_release_date">Mise à disposition</label>
+			<label index="th_update_date">Mise à jour</label>
+			<label index="th_time_period">Période de validité</label>
+			<label index="th_update_frequency">Fréquence</label>
+			<label index="th_publisher">Editeur</label>
+			<label index="th_creator">Auteur</label>
+			<label index="th_manager">Manager</label>
+			<label index="th_owner">Propriétaire</label>
+			<label index="th_fileformat">Format :</label>
+			<label index="th_tstamp">Actualisé le</label>
+			<label index="detail_title">Titre : </label>
+			<label index="detail_description">Description : </label>
+			<label index="detail_technical_data">Données techniques : </label>
+			<label index="detail_files">Fichiers : </label>
+			<label index="detail_agency">Département : </label>
+			<label index="detail_content">Contact : </label>
+			<label index="detail_licence">Licence : </label>
+			<label index="detail_release_date">Mise à disposition : </label>
+			<label index="detail_update_date">Mise à jour : </label>
+			<label index="detail_time_period">Période de validité :</label>
+			<label index="detail_update_frequency">Fréquence : </label>
+			<label index="detail_publisher">Editeur : </label>
+			<label index="detail_creator">Auteur : </label>
+			<label index="detail_manager">Manager : </label>
+			<label index="detail_owner">Propriétaire : </label>
+			<label index="detail_intro">Fiche détaillée de la base de données</label>
+			<label index="detail_other_data">Autre informations de la base de données</label>
+			<label index="detail_formatavailable">Format(s) disponible(s) : </label>
+			<label index="detail_contact">Contact</label>
+			<label index="detail_uid">Identifiant</label>
+			<label index="back">Retour</label>
+			<label index="search_keywords">Rechercher par mots clés</label>
+			<label index="search_submit">Rechercher</label>
+			<label index="search_fileformatTitle">Rechercher par type de flux</label>
+			<label index="search_agencyTitle">Rechercher par département</label>
+			<label index="search_tiersTitle">Rechercher par département</label>
+			<label index="search_fileFormatOther">Autre</label>
+			<label index="fileformat">Format de fichier</label>
+			<label index="rss_alt">Lien vers la page RSS</label>
+			<label index="rss_title">Lien vers la page RSS</label>
+			<label index="rss_text">Flux RSS</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Id: flexform_ds_pi1.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3DataStructure>
+	<meta>
+       <langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<configuration>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ics_od_datastore/locallang_flexform_pi1.xml:configuration</sheetTitle>
+				</TCEforms>
+				<el>
+					<what_to_display>
+						<TCEforms>
+							<label>LLL:EXT:ics_od_datastore/locallang_flexform_pi1.xml:what_to_display</label>
+							<config>	
+								<type>select</type>
+								<items type="array">
+								<numIndex index="0" type="array">
+									<numIndex index="0">LIST</numIndex>
+									<numIndex index="1">LIST</numIndex>
+								</numIndex>
+								<numIndex index="1" type="array">
+									<numIndex index="0">SINGLE</numIndex>
+									<numIndex index="1">SINGLE</numIndex>
+								</numIndex>
+								<numIndex index="2" type="array">
+									<numIndex index="0">SEARCH</numIndex>
+									<numIndex index="1">SEARCH</numIndex>
+								</numIndex>
+								<numIndex index="3" type="array">
+									<numIndex index="0">RSSFEED</numIndex>
+									<numIndex index="1">RSSFEED</numIndex>
+								</numIndex>
+								</items>
+								<maxitems>100</maxitems>
+								<size>3</size>
+								<multiple>1</multiple>
+								<selectedListStyle>width:150px</selectedListStyle>
+								<itemListStyle>width:150px</itemListStyle>
+							</config>
+						</TCEforms>
+					</what_to_display>
+					<template_file>
+						<TCEforms>
+							<label>LLL:EXT:ics_od_datastore/locallang_flexform_pi1.xml:template_file</label>
+							<config type="array">
+								<type>input</type>
+								<size>30</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard</script>
+										<params type="array">
+											<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+											<allowedExtensions>htm,html,tmpl,tpl</allowedExtensions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</template_file>
+					<nbFileGroupByPage>
+						<TCEforms>
+							<label>LLL:EXT:ics_od_datastore/locallang_flexform_pi1.xml:nbFileGroupByPage</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<checkbox></checkbox>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</nbFileGroupByPage>
+				</el>
+			</ROOT>
+		</configuration>
+	</sheets>
+</T3DataStructure>

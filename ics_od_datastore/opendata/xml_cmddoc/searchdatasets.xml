@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Id: searchdatasets.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<command name="Search datasets" cmd="datastore_searchdatasets" brief="Retrieves datasets.">
+	<description>Retrieves datasets from a select filter.</description>
+	<parameters>
+		<parameter name="agencies" type="string" mandatory="0">
+			<description>To filter on agencies, give the list of agencies id.</description>
+		</parameter>
+		<parameter name="fileformats" type="string" mandatory="0">
+			<description>To filter on files format, give the list of formats id or a list of formats name.</description>
+		</parameter>
+		<parameter name="licences" type="string" mandatory="0">
+			<description>To filter on licences, give the list of licences id.</description>
+		</parameter>
+		<parameter name="released" type="string" mandatory="0">
+			<description>To retrieve datasets from a published date. Date format is aaaa-mm-dd. Example : 2010-06-25.</description>
+		</parameter>
+		<parameter name="updated" type="string" mandatory="0">
+			<description>To retrieve datasets from a updated date. Date format is aaaa-mm-dd. Example : 2010-06-25.</description>
+		</parameter>
+		<parameter name="limit" type="number" mandatory="0">
+			<description>Number of results by page. If not set, one page without limit is returned.</description>
+		</parameter>
+		<parameter name="page" type="number" mandatory="0">
+			<description>Page's number to get results. If limit is set, default is first page.</description>
+		</parameter>
+	</parameters>
+</command>

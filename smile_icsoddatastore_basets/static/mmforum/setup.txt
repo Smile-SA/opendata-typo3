@@ -1,0 +1,145 @@
+plugin.tx_mmforum_pi1 {
+	list_topics {
+		listunread_pagenav_wrap = <small>|</small>
+		pagenav_wrap = <p><small> | </small></p>
+		lastPostDate_stdWrap >
+		lastPostDate_stdWrap {
+			preUserFunc = tx_mmforum_pi1->formatLastPostDate
+			preUserFunc.defaultDateFormat = {$plugin.tx_mmforum.dateFormat}
+			wrap = <span>|</span>
+		}
+		lastPostTopicTitle = 0
+		lastPostUserName_stdWrap {
+			wrap = <p>|</p>
+		}
+	}
+	list_posts {
+		userinfo.username_stdWrap.wrap = <div class="username"> | </div>
+		userinfo.creator_stdWrap.wrap = <div class="creator"> | </div>
+	}
+	post_limit = 10
+	postForm {
+		smiliesAsDiv = 1
+		smiliesAsDiv {
+			allWrap = <div class="smilies"> | </div>
+			itemWrap = <div class="smilie"> | </div>
+		}
+	}
+	display {
+		rootline.separator = &nbsp;&gt;&nbsp;
+	}
+	topicIcon >
+	topicIcon = IMAGE
+	topicIcon {
+		altText.cObject = COA
+		altText.cObject {
+			10 = TEXT
+			10 {
+				value = Fil de discussion
+			}
+			20 = TEXT
+			20 {
+				if.isTrue.field = unanswered
+				value = non répondu
+				stdWrap.noTrimWrap = | ||
+			}
+			30 = TEXT
+			30 {
+				if.isTrue.field = closed
+				value = clos
+				stdWrap.noTrimWrap = | ||
+			}
+			40 = TEXT
+			40 {
+				if.isTrue.field = solved
+				value = résolu
+				stdWrap.noTrimWrap = | ||
+			}
+			50 = TEXT
+			50 {
+				if.isTrue.field = hot
+				value = chaud
+				stdWrap.noTrimWrap = | ||
+			}
+		}
+
+		file = GIFBUILDER
+		file {
+			XY = 32,32
+
+			1 = BOX
+			1 {
+				dimensions = 0,0,32,32
+				color = #ffffff;
+			}
+
+			10 = IMAGE
+			10 {
+				file = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/default/topicicon/normal.png
+				offset = 0,0
+			}
+
+			20 = IMAGE
+			20 {
+				file = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/default/topicicon/unanswered.png
+				offset = 0,0
+				if.isTrue.field = unanswered
+			}
+
+			30 = IMAGE
+			30 {
+				file = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/default/topicicon/closed.png
+				offset = 0,0
+				if.isTrue.field = closed
+			}
+
+			40 = IMAGE
+			40 {
+				file = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/default/topicicon/solved.png
+				offset = 0,0
+				if.isTrue.field = solved
+			}
+
+			50 = IMAGE
+			50 {
+				file = EXT:smile_icsoddatastore_basets/res/mm_forum/tmpl/default/topicicon/hot.png
+				offset = 0,0
+				if.isTrue.field = hot
+			}
+		}
+	}
+	_LOCAL_LANG.fr {
+		board-rootline = thèmes
+		board-hideSolved = masquer les fils clos
+		board-author = Auteurs
+		board-lastPost = Dernieres interventions
+		page-goto = afficher la page&nbsp;
+		post-writtenOn = <!--
+		user-username = Pseudonyme
+		user-regDate = Inscrit depuis le 
+		user-totalPosts = Interventions 
+		user-10topics = Les 10 derniers fils
+		newPost-save = valider
+		newTopic-save = valider
+		newPost-preview = aperçu
+		newTopic-preview = aperçu
+		newPost-reset = vider le formulaire
+		newTopic-reset = vider le formulaire
+		newTopic-title = Titre :
+		newTopic-create = Lancer un nouveau fil de discussion
+	}
+}
+
+plugin.tx_mmforum_pi4 {
+	_LOCAL_LANG.fr {
+		searchform-title = recherche :
+		searchform-searchstring = Mots clés :
+		searchform-searchplace = Lieu de recherche :
+		searchform-orderBy = Classement :
+		searchform-onlySolved = Uniquement les fils clos
+		searchform-onePost = Ne lister qu'un fil par thème
+		searchform-submit = lancer la recherche
+		search-results = résultats trouvés
+		search-searchresults = Recherche
+	}
+}

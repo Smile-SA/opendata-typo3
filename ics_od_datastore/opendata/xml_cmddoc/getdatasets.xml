@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Id: getdatasets.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<command name="Get datasets" cmd="datastore_getdatasets" brief="Retrieves datasets for a datasets id list.">
+	<description>
+		Retrieves datasets.&#13;
+		Datasets are returned for a datasets id list.&#13;
+		Informations about datasets files can be filter on a stockage type and a file type.&#13;
+		Example : ids="2,15", type="url"  and filetype="data"&#13;
+		Returns datasets 2 and 15. Files are data files with url.
+	</description>
+	<parameters>
+		<parameter name="ids" type="string" mandatory="1" >
+			<description>The id list.</description>
+		</parameter>
+		<parameter name="type" type="enum" mandatory="0" default="full">
+			<description>The file stockage type.</description>
+			<values>
+				<value value="full">
+					<description>No filter on stockage type files. All stockage type files are returned.</description>
+				</value>
+				<value value="url">
+					<description>Return only files with given URL.</description>
+				</value>
+			</values>
+		</parameter>
+		<parameter name="filetype" type="enum" mandatory="0" default="any">
+			<description>The data type.</description>
+			<values>
+				<value value="any">
+					<description>No filter on file types. All file types are returned.</description>
+				</value>
+				<value value="doc">
+					<description>Return only doc files.</description>
+				</value>
+				<value value="data">
+					<description>Return only data files.</description>
+				</value>
+				<value value="metadata">
+					<description>Return only metadata files.</description>
+				</value>
+			</values>
+		</parameter>
+	</parameters>
+</command>

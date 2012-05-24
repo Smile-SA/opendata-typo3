@@ -1,0 +1,44 @@
+# $Id: ext_typoscript_setup.txt 48432 2011-06-07 09:27:20Z emilieprudhomme $
+
+# Show list
+plugin.tx_icsodappstore_pi1.pidmodif =  {$plugin.ics_od_appstore.edit}
+plugin.tx_icsodappstore_pi1.pidstat =  {$plugin.ics_od_appstore.stat}
+plugin.tx_icsodappstore_pi1.pidcreate =  {$plugin.ics_od_appstore.create}
+plugin.tx_icsodappstore_pi1.pidview =  {$plugin.ics_od_appstore.view}
+plugin.tx_icsodappstore_pi1.template =  {$plugin.ics_od_appstore.template}
+
+# Edit API Key
+plugin.tx_icsodappstore_pi2.pid = {$plugin.ics_od_appstore.pid}
+plugin.tx_icsodappstore_pi2.usergroup = {$plugin.ics_od_appstore.usergroup}
+plugin.tx_icsodappstore_pi2.template =  {$plugin.ics_od_appstore.template}
+plugin.tx_icsodappstore_pi2.styleApi = typo3conf/ext/ics_od_appstore/res/css/styles.css
+
+
+# AppStore
+plugin.tx_icsodappstore_pi4.template =  {$plugin.ics_od_appstore.template}
+plugin.tx_icsodappstore_pi4.styleApi = typo3conf/ext/ics_od_appstore/res/css/styles.css
+
+plugin.tx_icsodappstore_pi4.list {
+	colNum = 2
+	rowsByCol = 3
+	orderDefault = release_date
+	orderAvailable = release_date,countcall
+	descSize = 220
+
+	logo = IMG_RESSOURCE
+	logo.file = typo3conf/ext/ics_od_appstore/res/default.png
+	logo.file.maxW = 106
+	logo.file.maxH = 106	
+}
+
+plugin.tx_icsodappstore_pi4.detail{
+	#nothing
+}
+
+# Comment on AppStore
+plugin.tx_comments_pi1 {
+	prefixToTableMap.tx_icsodappstore_pi4 = tx_icsodappstore_applications
+	showUidMap.tx_icsodappstore_pi4 = uid
+}
+# Rate an application
+plugin.tx_icsodappstore_pi4.ratings = 1

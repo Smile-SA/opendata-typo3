@@ -1,0 +1,126 @@
+plugin.tx_smileicsoddatastorerss_pi1 {
+	view = ALL
+	templateFile = EXT:smile_icsoddatastore_rss/res/template.html
+	limit = 10
+	datastorePid = 0
+	site_description = {$plugin.tx_smileicsoddatastorerss_pi1.site_description}
+	site_description_stdWrap {
+		required = 1
+		wrap = <description> | </description>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	site_lang = {$plugin.tx_smileicsoddatastorerss_pi1.site_lang}
+	site_lang_stdWrap {
+		required = 1
+		wrap = <language> | </language>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	generator = {$plugin.tx_smileicsoddatastorerss_pi1.generator}
+	generator_stdWrap {
+		required = 1
+		wrap = <generator> | </generator>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	docs = {$plugin.tx_smileicsoddatastorerss_pi1.docs}
+	docs_stdWrap {
+		required = 1
+		wrap = <docs> | </docs>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	copyright = {$plugin.tx_smileicsoddatastorerss_pi1.copyright}
+	copyright_stdWrap {
+		required = 1
+		wrap = <copyright> | </copyright>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	webmaster = {$plugin.tx_smileicsoddatastorerss_pi1.webmaster}
+	webmaster_stdWrap {
+		required = 1
+		wrap = <webMaster> | </webMaster>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	managingeditor = {$plugin.tx_smileicsoddatastorerss_pi1.managingeditor}
+	managingeditor_stdWrap {
+		required = 1
+		wrap = <managingEditor> | </managingEditor>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	lastbuild_stdWrap {
+		required = 1
+		wrap = <pubDate> | </pubDate>
+		htmlSpecialChars = 1
+		preserveEntities = 1
+	}
+	author_stdWrap {
+		required = 1
+		wrap = <author> | </author>
+	}
+	format_stdWrap {
+		required = 1
+		wrap = <formatFichier> | </formatFichier>
+	}
+	category_stdWrap {
+		required = 1
+		wrap = <category> | </category>
+	}
+}
+
+xmldatastore_all = PAGE
+xmldatastore_all {
+	typeNum = 110
+
+	10 =< plugin.tx_smileicsoddatastorerss_pi1
+	10 {
+		view = ALL
+	}
+
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type:application/xml
+		xhtml_cleaning = 0
+		admPanel = 0
+	}
+}
+
+xmldatastore_highlighted < xmldatastore_all
+xmldatastore_highlighted {
+	typeNum = 111
+	10.view = HIGHLIGHTED
+}
+
+page.headerData.101 = COA
+page.headerData.101 {
+	10 = TEXT
+	10 {
+		value = <link href="
+	}
+
+	20 = TEXT
+	20 {
+		data = getIndpEnv:TYPO3_SITE_URL
+	}
+
+	30 = TEXT
+	30 {
+		value = ?type=110
+	}
+
+	40 = TEXT
+	40 {
+		value = Jeux de données
+		wrap = " title="|" type="application/rss+xml" rel="alternate" />
+	}
+}
+
+page.headerData.102 < page.headerData.101
+page.headerData.102 {
+	30.value = ?type=111
+	40.value = Jeux de données mis en avant
+}

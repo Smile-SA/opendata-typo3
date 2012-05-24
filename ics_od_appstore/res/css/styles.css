@@ -1,0 +1,277 @@
+/*
+ * $Id: styles.css 48432 2011-06-07 09:27:20Z emilieprudhomme $ 
+ */
+
+#content .empty{
+	width:63em;
+}
+
+.tx-icsodappstore-pi4 .content-softs h3{
+	
+}
+.tx-icsodappstore-pi4 .detail-soft .title-soft h4,
+.tx-icsodappstore-pi4 .content-softs h4{
+	font-size:0.75em;
+	border:medium none;
+}
+.tx-icsodappstore-pi4 .highlight{
+	color:#0A7ADA;
+}
+
+.tx-icsodappstore-pi4 p.pages-softs{
+	float:right;
+}
+
+p.pages-softs a,
+p.pages-softs span{
+	margin:0 3px;
+}
+
+div.header-softs{
+	float:left;
+	width:100%;
+	border-bottom:1px solid #65BFC6;
+}
+
+.tx-icsodappstore-pi4 div.footer-softs{
+	float:left;
+	width:100%;
+	border-top:1px solid #65BFC6;
+}
+
+/*LIST DISPLAY*/
+
+.tx-icsodappstore-pi4 .content-softs p.sort-softs{
+	float:left;
+	width:50%;
+}
+.tx-icsodappstore-pi4 .content-softs p.sort-softs .separator{
+	margin:0 3px;
+}
+
+.tx-icsodappstore-pi4 .content-softs  .col-soft{
+	float:left;
+	margin:2% 1% 2% 0;
+	width:48%;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft-1,
+.tx-icsodappstore-pi4 .content-softs .content-soft-3,
+.tx-icsodappstore-pi4 .content-softs .content-soft-5{
+	background-color:#EDEDED;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft{
+	height:143px;
+	margin:3% 0;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft .link {
+	float:left;
+	margin-top:-0.5em;
+	width:100%;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft .link  a{
+	float:right;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-logo img{
+	width:121px;
+	height:121px;
+	float:left;
+}
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-logo{
+	float:left;
+	margin:1%;
+	overflow:hidden;
+	width:26%;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-logo-mask{
+	background:transparent url("img/masque1.png") no-repeat center center;
+	position:absolute;
+	width:121px;
+	height:121px;
+}
+.tx-icsodappstore-pi4 .content-softs .content-soft-1 .soft-logo-mask,
+.tx-icsodappstore-pi4 .content-softs .content-soft-3 .soft-logo-mask,
+.tx-icsodappstore-pi4 .content-softs .content-soft-5 .soft-logo-mask{
+	background:transparent url("img/masque2.png") no-repeat center center;
+}
+
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-infos{
+	float:right;
+	width:72%;
+}
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-infos h3,
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-infos h4,
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-infos p{
+	float:left;
+	width:96%;
+	margin:0 2%;
+	padding:0;
+}
+.tx-icsodappstore-pi4 .content-softs .content-soft .soft-infos p{
+	margin-top:1%;
+}
+
+/*DETAIL DISPLAY*/
+
+
+.tx-icsodappstore-pi4 .detail-soft{
+	margin:1% 0;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .soft-logo img{
+	width:75px;
+	height:75px;
+	float:left;
+}
+.tx-icsodappstore-pi4 .detail-soft .soft-logo{
+	float:left;
+	margin:1%;
+	overflow:hidden;
+}
+
+.tx-icsodappstore-pi4 .detail-soft h3{
+	float:left;
+	margin:37px 11px;
+}
+.tx-icsodappstore-pi4 .detail-soft .title-soft h4{
+	float:right;
+	margin:37px 11px;
+	text-align:right;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .title-soft{
+	width:98%;
+	margin:2% 1% 0 1%;
+	float:left;
+}
+
+
+.tx-icsodappstore-pi4 .detail-soft .content-soft{
+	width:100%;
+	float:left;
+	margin-bottom:6%;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .soft-infos h4{
+	color:#35ABB5;
+	border:medium none;
+	padding-left:0;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .soft-infos{
+	width:47%;
+	margin:0% 2% 2% 0%;
+	float:left;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .soft-infos .link{
+	background:url("img/download.jpg") no-repeat scroll right center transparent;
+	float:right;
+	margin-top:4%;
+	padding:4px 0 4px 33px;
+	width:240px;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .soft-infos .link a{
+	color:#0544A2;
+	font-size:0.7em;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot{
+	width:461px;
+	float:right;
+	border:4px solid #31A9B3;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot img {
+	width:100%;
+	float:left;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot .soft-img-normal{
+	width:352px;
+	float:left;
+	overflow:hidden;
+	height:250px;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot .soft-img-key-mins{
+	width:106px;
+	float:left;
+	border-left:3px solid #31A9B3;
+	overflow:hidden;
+	height:250px;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot .soft-img-key-min{
+	float:left;
+	border-top:3px solid #31A9B3;
+	height:82px;
+}
+/*.tx-icsodappstore-pi4 .detail-soft .screenshot .current{
+	background:transparent url("img/masque-min.png") repeat-x left top;
+	position:absolute;
+	width:106px;
+	height:82px;
+}
+*/
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot .soft-img-key-min0{
+	border-top:none;
+}
+
+.tx-icsodappstore-pi4 .detail-soft .screenshot img{
+	width:100%;
+}
+
+/***********************************************************/
+/* EDIT KEY                                                */
+/***********************************************************/
+#coldroite #contenu .tx-icsodappstore-pi2 div{
+	margin: 4px 0;
+}
+#coldroite #contenu .tx-icsodappstore-pi2 label{
+	width: 170px;
+	font-size: 0.8em;
+}
+#coldroite #contenu .tx-icsodappstore-pi2 .checkbox{
+	border: none;
+}
+
+#coldroite #contenu .tx-icsodappstore-pi2 .form .file,
+#coldroite #contenu .tx-icsodappstore-pi2 .form .files{
+	clear: both;
+}
+
+#coldroite #contenu .tx-icsodappstore-pi2 .file input {
+	height: 28px;
+}
+
+#coldroite #contenu .tx-icsodappstore-pi2 .file .filedelete {
+	float: left;
+	width: 10em;
+}
+
+#coldroite #contenu .tx-icsodappstore-pi2 .file .filedelete input{
+	vertical-align: top;
+}
+#coldroite #contenu .tx-icsodappstore-pi2 .file .filedelete label{
+	float: none;
+	vertical-align: top;
+	width: auto;
+	background: none;
+	color: #000000;
+}
+
+#coldroite #contenu .tx-icsodappstore-pi2 .publication{
+	vertical-align: 50%;
+}
+
+#coldroite #contenu .tx-icsodappstore-pi2 #link{
+	width: 25em;
+}

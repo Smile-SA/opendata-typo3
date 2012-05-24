@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: test2.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<books>
+    <book id="1">
+        <title>Code Generation in Action</title>
+        <author><first>Jack</first><last>Herrington</last></author>
+        <publisher>Manning</publisher>
+    </book>
+    <book id="2">
+        <title>PHP Hacks</title>
+        <author><first>Jack</first><last>Herrington</last></author>
+        <publisher>O'Reilly</publisher>
+    </book>
+    <book id="3">
+        <title>Podcasting Hacks</title>
+        <author><first>Jack</first><last>Herrington</last></author>
+        <publisher>O'Reilly</publisher>
+    </book>
+</books>

@@ -1,0 +1,21 @@
+# $Id: ext_typoscript_constants.txt 48432 2011-06-07 09:27:20Z emilieprudhomme $
+
+plugin.ics_od_appstore {
+	# cat=plugin.ics_od_appstore//; type=int; label= pidStorage : Storage folder for api's key
+	pid =
+	# cat=plugin.ics_od_appstore//; type=string; label= Usergroup : api usergroups, separated by coma
+	usergroup =
+	# cat=plugin.ics_od_appstore//; type=int; label= Edit : Edit page id for api's key
+	edit = 
+	# cat=plugin.ics_od_appstore//; type=int; label= Stat : Stat page id for api's key
+	stat =
+	
+	# cat=plugin.ics_od_appstore//; type=int; label= Create : Create page id for api's key
+	create =
+	
+	# cat=plugin.ics_od_appstore//; type=int; label= View : View page id for api's key
+	view =
+
+	# cat=plugin.ics_od_appstore//; type=string; label= Template file : The template file path
+	template = 
+}

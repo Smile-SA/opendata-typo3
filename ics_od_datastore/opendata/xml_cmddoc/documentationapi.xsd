@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="command">
+		<xs:all>
+			<xs:element name="description" type="xs:string" />
+			<xs:element name="parameters" type="parameters" />
+		</xs:all>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="cmd" type="xs:string" use="required" />
+		<xs:attribute name="brief" type="xs:string" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="parameters">
+		<xs:sequence>
+			<xs:element name="parameter" type="parameter" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="parametertype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="enum" />
+			<xs:enumeration value="string" />
+			<xs:enumeration value="number" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="parameter">
+		<xs:all>
+			<xs:element name="description" type="xs:string" />
+			<xs:element name="values" type="values" />
+		</xs:all>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="type" type="parametertype" use="required" />
+		<xs:attribute name="mandatory" type="xs:boolean" use="required" />
+		<xs:attribute name="default" type="xs:string" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="values">
+		<xs:sequence>
+			<xs:element name="value" type="value" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="value">
+		<xs:all>
+			<xs:element name="description" type="xs:string" />
+			<xs:element name="parameters" type="parameters" />
+		</xs:all>
+		<xs:attribute name="value" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:element name="command" type="command" />
+</xs:schema>

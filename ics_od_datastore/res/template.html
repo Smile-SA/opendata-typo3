@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- $Id: template.html 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Group files example template</title>
+</head>
+<body>
+
+<h1>Templates</h1>
+
+<h2>Raw data catalog</h2>
+
+<!-- ###TEMPLATE_SEARCH### start -->
+<div class="###PREFIXID###_search">
+	<form action="###FORM_ACTION###" method="post" name="###PREFIXID###_searchForm">
+		<div class="###PREFIXID###_left">
+			<div class="###PREFIXID###_keywords">
+				<!--<label for="###PREFIXID###_keywords" class="###PREFIXID###_keywords">###KEYWORDS_LABEL###</label>-->
+				<h3 class="###PREFIXID###_keywords">###KEYWORDS_LABEL###</h3>
+				<input type="text" name="###PREFIXID###[keywords]" value="###KEYWORDS_VALUE###" size="50" id="###PREFIXID###_keywords"/>
+			</div>
+		</div>
+		<div class="###PREFIXID###_right">
+			<div class="###PREFIXID###_fileformatBlock">
+				<h3 class="###PREFIXID###_titleFileType">###TITLE_FILEFORMAT###</h3>
+				<div class="###PREFIXID###_fileformat">
+					<!-- ###FILEFORMAT_ITEM### start -->
+					<div class="###PREFIXID###_fileformatItem">
+						<label for="###PREFIXID###_fileformat###FILEFORMAT_VALUE###">###FILEFORMAT_LABEL###</label>
+						<input id="###PREFIXID###_fileformat###FILEFORMAT_VALUE###" name="###PREFIXID###[fileformat][]" type="checkbox" ###CHECKED### value="###FILEFORMAT_VALUE###">
+					</div>
+					<!-- ###FILEFORMAT_ITEM### end -->
+				</div>
+			</div>
+			<h3 class="###PREFIXID###_titleTiers">###TITLE_TIERS###</h3>
+			<div class="###PREFIXID###_tiers">
+				<!-- ###TIERS_ITEM### start -->
+				<div class="###PREFIXID###_tiersItem">
+					<input id="###PREFIXID###_tiers###TIERS_VALUE###" name="###PREFIXID###[tiers][]" type="checkbox" ###CHECKED### value="###TIERS_VALUE###">
+					<label for="###PREFIXID###_tiers###TIERS_VALUE###">###TIERS_LABEL###</label>
+				</div>
+				<!-- ###TIERS_ITEM### end -->
+			</div>
+		</div>
+		
+		<div class="button">
+			<input type="submit" name="###PREFIXID###[submit]" value="###SEARCHBUTTON_VALUE###" id="###PREFIXID###_submitSearch"/>
+		</div>
+	</form>
+</div>
+<!-- ###TEMPLATE_SEARCH### end -->
+
+
+
+
+
+<!-- ###TEMPLATE_LIST### start -->
+<div class="###PREFIXID###_list">
+	<table id="###UNIQID###">
+		<caption>###CAPTION###</caption>
+		<thead>
+			<tr>
+				<!-- ###HEADER_ITEM### start -->
+					<th class="###PREFIXID###_th_sort" id="###HEADERIDTITLE###">
+						###HEADERTITLE###
+						<a class="###PREFIXID###_sortImg" href="###SORTTITLE_LINK###" title="###SORTTITLE_LINK_TITLE###"><img src="###SORTTITLE_IMG###" alt="###SORTTITLE_ALT###" title="###SORTTITLE_TITLE###" /></a>
+					</th>
+					<th class="###PREFIXID###_th_sort publisher"  id="###HEADERIDPUBLISHER###">
+						###HEADERPUBLISHER###
+						<a class="###PREFIXID###_sortImg" href="###SORTPUBLISHER_LINK###" title="###SORTPUBLISHER_LINK_TITLE###"><img src="###SORTPUBLISHER_IMG###" alt="###SORTPUBLISHER_ALT###" title="###SORTPUBLISHER_TITLE###" /></a>
+						</th>
+					<th id="###HEADERIDFILES###" class="odfiles">###HEADERFILES###</th>
+					<th class="###PREFIXID###_th_sort tstamp" id="###HEADERIDTSTAMP###">
+						###HEADERTSTAMP###
+						<a class="###PREFIXID###_sortImg" href="###SORTTSTAMP_LINK###" title="###SORTTSTAMP_LINK_TITLE###"><img src="###SORTTSTAMP_IMG###" alt="###SORTTSTAMP_ALT###" title="###SORTTSTAMP_TITLE###" /></a>
+					</th>
+				<!-- ###HEADER_ITEM### end -->
+			</tr>
+		</thead>
+		<tbody>
+			<!-- ###GROUP_ROW_CONTENT### start -->
+			<!-- ###GROUP_ROW### start -->
+				<tr class="odd">
+					<!-- ###ROW_ITEM### start -->
+						<td headers="###HEADERIDTITLE###">
+							<a class="detail_link" href="###URL###">###TITLE###</a>
+							###DESCRIPTION###
+						</td>
+						<td headers="###HEADERIDPUBLISHER###" align="center">###PUBLISHER###</td>
+						<td headers="###HEADERIDFILES###">
+							<!-- ###SECTION_FILE### start -->
+								<!--###SECTION_NAME###-->
+								<!-- ###PICTO_ITEM### start -->
+									<div class="###PREFIXID###_pictoItem">
+										<div class="###PREFIXID###_file"><!--###LINK_ITEM###-->###PICTO###<!--###LINK_ITEM###--></div>
+										<div class="###PREFIXID###_fileSize">###FILESIZE###</div>
+									</div>
+								<!-- ###PICTO_ITEM### end -->
+							<!-- ###SECTION_FILE### end -->
+						</td>
+						<td headers="###HEADERIDTSTAMP###">
+							###TSTAMP###
+						</td>
+					<!-- ###ROW_ITEM### end -->
+				</tr>
+			<!-- ###GROUP_ROW### end -->
+			<!-- ###GROUP_ROW_ALT### start -->
+				<tr class="even">
+					<!-- ###ROW_ITEM### start -->
+						<td headers="###HEADERIDTITLE###">
+							<a class="detail_link" href="###URL###">###TITLE###</a>
+							###DESCRIPTION###
+						</td>
+						<td headers="###HEADERIDPUBLISHER###">###PUBLISHER###</td>
+						<td headers="###HEADERIDFILES###">
+							<!-- ###SECTION_FILE### start -->
+								<!--###SECTION_NAME###-->
+								<!-- ###PICTO_ITEM### start -->
+									<div class="###PREFIXID###_pictoItem">
+										<div class="###PREFIXID###_file"><!--###LINK_ITEM###-->###PICTO###<!--###LINK_ITEM###--></div>
+										<div class="###PREFIXID###_fileSize">###FILESIZE###</div>
+									</div>
+								<!-- ###PICTO_ITEM### end -->
+							<!-- ###SECTION_FILE### end -->
+						</td>
+						<td headers="###HEADERIDTSTAMP###">
+							###TSTAMP###
+						</td>
+					<!-- ###ROW_ITEM### end -->
+				</tr>
+			<!-- ###GROUP_ROW_ALT### end -->
+			<!-- ###GROUP_ROW_CONTENT### end -->
+		</tbody>
+	</table>
+	<div class="###PREFIXID###_paginate">###PAGE_BROWSER###</div>
+</div>
+<!-- ###TEMPLATE_LIST### end -->
+
+
+
+
+
+<!-- ###TEMPLATE_SINGLE### start -->
+<div class="###PREFIXID###_single">
+	###TITLE_VALUE###
+	<div class="###PREFIXID###_left">
+		<div class="###PREFIXID###_intro separator">###INTRO###</div>
+		<div class="###PREFIXID###_uid separator">
+			###UID_LABEL### ###UID_VALUE###
+		</div>
+		<!-- ###SUBPART_PUBLISHER### -->
+		<div class="###PREFIXID###_publisher separator">
+			###PUBLISHER_LABEL### ###PUBLISHER_VALUE###
+		</div>
+		<!-- ###SUBPART_PUBLISHER### end -->
+		<!-- ###SUBPART_AGENCY### begin -->
+		<div class="###PREFIXID###_agency separator">
+			###AGENCY_LABEL### ###AGENCY_VALUE###
+		</div>
+		<!-- ###SUBPART_AGENCY### end -->
+		
+		<!-- ###SUBPART_TIME_PERIOD### begin -->
+		<div class="###PREFIXID###_timeperiod separator">
+			###TIME_PERIOD_LABEL### ###TIME_PERIOD_VALUE###
+		</div>
+		<!-- ###SUBPART_TIME_PERIOD### end -->
+		<!-- ###SUBPART_RELEASE_DATE### begin -->
+		<div class="###PREFIXID###_releasedate separator">
+			###RELEASE_DATE_LABEL### ###RELEASE_DATE_VALUE###
+		</div>
+		<!-- ###SUBPART_RELEASE_DATE### end -->
+		<!-- ###SUBPART_UPDATE_DATE### begin -->
+		<div class="###PREFIXID###_updatedate separator">
+			###UPDATE_DATE_LABEL### ###UPDATE_DATE_VALUE###
+		</div>
+		<!-- ###SUBPART_UPDATE_DATE### end -->
+		<!-- ###SUBPART_UPDATE_FREQUENCY### begin -->
+		<div class="###PREFIXID###_updatefrequency separator">
+			###UPDATE_FREQUENCY_LABEL### ###UPDATE_FREQUENCY_VALUE###
+		</div>
+		<!-- ###SUBPART_UPDATE_FREQUENCY### end -->
+		<!-- ###SUBPART_DESCRIPTION### begin -->
+		<div class="###PREFIXID###_description separator">
+			###DESCRIPTION_LABEL### ###DESCRIPTION_VALUE###
+		</div>
+		<!-- ###SUBPART_DESCRIPTION### end -->
+		<!-- ###SUBPART_TECHNICAL_DATA### begin -->
+		<div class="###PREFIXID###_technical_data separator">
+			###TECHNICAL_DATA_LABEL### ###TECHNICAL_DATA_VALUE###
+		</div>
+		<!-- ###SUBPART_TECHNICAL_DATA### end -->
+
+		<div class="###PREFIXID###_intro separator">###OTHER_DATA###</div>
+
+		<!-- ###SUBPART_LICENCE### begin -->
+		<div class="###PREFIXID###_licence separator">
+			###LICENCE_LABEL### ###LICENCE_VALUE###
+		</div>
+		<!-- ###SUBPART_LICENCE### end -->
+		<!-- ###SUBPART_CONTACT### begin -->
+		<div class="###PREFIXID###_contact separator">
+			###CONTACT_LABEL### ###CONTACT_VALUE###
+		</div>
+		<!-- ###SUBPART_CONTACT### end -->
+		<!-- ###SUBPART_CREATOR### begin -->
+		<div class="###PREFIXID###_creator separator">
+			###CREATOR_LABEL### ###CREATOR_VALUE###
+		</div>
+		<!-- ###SUBPART_CREATOR### end -->
+		<!-- ###SUBPART_MANAGER### begin -->
+		<div class="###PREFIXID###_manager separator">
+			###MANAGER_LABEL### ###MANAGER_VALUE###
+		</div>
+		<!-- ###SUBPART_MANAGER### end -->
+		<!-- ###SUBPART_OWNER### begin -->
+		<div class="###PREFIXID###_owner separator">
+			###OWNER_LABEL### ###OWNER_VALUE###
+		</div>
+		<!-- ###SUBPART_OWNER### end -->
+		<div class="###PREFIXID###_backlink">###BACKLINK###</div>
+	</div>
+	<div class="###PREFIXID###_right">
+		<div class="###PREFIXID###_intro separator">###FORMAT###</div>
+		<!-- ###SECTION_FILE### start -->
+			###SECTION_NAME###
+			<!-- ###PICTO_ITEM### start -->
+				<div class="###PREFIXID###_pictoItem">
+					<div class="###PREFIXID###_file"><!--###LINK_ITEM###-->###PICTO###<!-- ###FILEEXT### --><!--###LINK_ITEM###--></div>
+					<div class="###PREFIXID###md5">###FILEMD5###</div>
+					<div class="###PREFIXID###_fileSize">###FILESIZE###</div>
+				</div>
+			<!-- ###PICTO_ITEM### end -->
+		<!-- ###SECTION_FILE### end -->
+	</div>
+</div>
+<!-- ###TEMPLATE_SINGLE### end -->
+
+
+
+<h2>The template for RSS feed</h2>
+<div>
+	<p>###URL### : Link to RSS feed page</p>
+	<p>###LINK_IMAGE### : RSS link image</p>
+	<p>###LINK_ALT### : Image text alternative</p>
+	<p>###LINK_TITLE### : The image title</p>
+	<p>###LINK_TEXT### : The link text</p>
+</div>
+<!-- ###TEMPLATE_RSS### start-->
+<div class="###PREFIXID###_rss">
+	<p><a href="###URL###"><img src="###LINK_IMAGE###" alt="###LINK_ALT###" title="###LINK_TITLE###" /><!--###LINK_TEXT###--></a></p>
+</div>
+<!-- ###TEMPLATE_RSS### end-->
+
+</body>
+</html>

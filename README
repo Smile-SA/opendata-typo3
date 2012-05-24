@@ -1,0 +1,30 @@
+Ce package est composé de 7 extensions (les 3 premières sont celle d'In-Cité qui ont été modifiées) :
+
+1/ ics_od_appstore :
+- Corrections de vulnérabilités du site aux injections SQL.
+- Corrections de vulnérabilités XSS.
+- Le alt des images était en dur dans l'appstore, c'est maintenant chargé depuis un locallang.
+
+2/ ics_od_datastore :
+- Corrections de vulnérabilités du site aux injections SQL.
+- Détail d'un JDD - Description contenant des balises HTML pas uniquement du texte brut (avec la possibilité de poser des retours à la ligne).
+- Après suppression de tiers dans le backend, ceux-ci ne disparaissaient pas du FE (page de recherche des jeux), cela est corrigé.
+- Possibilité de trier par défaut les résultats de recherche sur le titre du JDD.
+- Lors d'une recherche par format de fichier, affichage  de tous les formats disponible pour chaque jeux de données remontés.
+
+3/ ics_od_core_api :
+- Pour afficher les messages d'erreurs, on teste maintenant la version puis la key puis la cmd (changement d'ordre qui rende plus logique le message d'erreur affiché lorsqu'un paramètre est manquant lors de l'appel à l'API).
+
+4/ smile_icsoddatastore_date :
+- Ajout d'un nouveau critère de recherche : la date (au format jj/mm/aaaa).
+
+5/ smile_icsoddatastore_rss
+- L'export RSS des jeux de données a été isolé dans une extension particulière.
+- Il comporte maintenant 2 flis RSS : le fil contenant tous les jeux de données et celui ne comportant que ceux que le contributeur BE a choisi de mettre en avant.
+
+6/ smile_icsoddatastore_license :
+- Validation de la license une et une seule fois par session.
+
+7/ smile_icsoddatastore_basets :
+- Cette extension embarque 3 codes Typoscript static ayant vocation à simplifier l'intégration de fonctionnalités fréquemment mise en place : felogin (boite d'authentificaton), mmforum (forum), srfeuserregister (formulaire d'inscription et d'édition du profil de l'utilisateur).
+

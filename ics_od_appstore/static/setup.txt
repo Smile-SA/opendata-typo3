@@ -1,0 +1,32 @@
+
+plugin.tx_icsodappstore{
+	pid = {$config.ics_od_appstore.pid}
+	template = {$config.ics_od_appstore.template}
+	edit = {$config.ics_od_appstore.edit}
+	stat = {$config.ics_od_appstore.stat}
+	create = {$config.ics_od_appstore.create}
+	view = {$config.ics_od_appstore.view}
+	usergroup = {$config.ics_od_appstore.usergroup}
+	style = typo3conf/ext/ics_od_appstore/res/css/styles.css
+	
+	list {
+		colNum = {$config.ics_od_appstore.list.colNum}
+		rowsByCol = {$config.ics_od_appstore.list.rowsByCol}
+		orderDefault = {$config.ics_od_appstore.list.orderDefault}
+		orderAvailable = {$config.ics_od_appstore.list.orderAvailable}
+		descSize = {$config.ics_od_appstore.list.descSize}
+
+		logo = IMG_RESSOURCE
+		logo.file = {$config.ics_od_appstore.list.logo.default}
+		logo.file.maxW = 106
+		logo.file.maxH = 106	
+	}
+	
+	ratings = {$config.ics_od_appstore.ratings}
+}
+
+# Comment on AppStore
+plugin.tx_comments_pi1 {
+	prefixToTableMap.tx_icsodappstore_pi4 = tx_icsodappstore_applications
+	showUidMap.tx_icsodappstore_pi4 = uid
+}

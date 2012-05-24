@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_icsopendataapi_pi2&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pid_valid">The pid is not valid.</label>
+			<label index="nologin">Any user are connected.</label>
+			<label index="error_group">Not acces.</label>
+			<label index="application">Update application</label>
+			<label index="name">Name * : </label>
+			<label index="description">Description * : </label>
+			<label index="platform">Platform : </label>
+			<label index="btn_registration">Register</label>
+			<label index="btn_back">Go back</label>
+			<label index="application_updated">The application is updated.</label>
+			<label index="application_not_exists">An error occured. The application does not exists.</label>
+			<label index="link">Link : </label>
+			<label index="filedelete">delete file</label>
+			<label index="max_size">max size</label>
+			<label index="publish">Publish</label>
+			<label index="last_publication">Last publication</label>
+			<label index="screenshot">Screenshot</label>
+			<label index="logo">Logo</label>
+			<label index="categories">Categories</label>
+			<label index="new_application">New application</label>
+			<label index="registration_validated">The application was registered under the key </label>
+			<label index="application_already">This application already exists.</label>
+			<label index="files_number_max">Nombre maximal atteint. Veuillez en supprimer pour pouvoir en ajouter de nouveau.</label>
+			<label index="file_delete">File %1$s deleted.</label>
+			<label index="file_uploaded">File %1$s uploaded.</label>
+			<label index="file_error_uploaded">An error occured. File %1$s has not uploaded.</label>
+			<label index="file_error_size">An error occured. Size of file %1$s has greater in authorized limit (%2$s).</label>
+			<label index="file_error_extension">An error occured. Extension of file %1$s has not authorized.</label>
+			<label index="required_name">Name is required</label>
+			<label index="required_description">Description is required</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="pid_valid">Le pid n'est pas valide.</label>
+			<label index="nologin">Merci de vous identifier, pour pouvoir éditer l'application.</label>
+			<label index="error_group">Votre compte utilisateur ne vous permet pas de créer une nouvelle application.</label>
+			<label index="application">Modification de l'application</label>
+			<label index="name">Nom * :</label>
+			<label index="description">Description * :</label>
+			<label index="platform">Plateforme :</label>
+			<label index="btn_registration">Enregistrer</label>
+			<label index="back">Retour</label>
+			<label index="application_updated">L'application a été modifiée.</label>
+			<label index="application_not_exists">L'application n'existe pas.</label>
+			<label index="link">Lien :</label>
+			<label index="filedelete">supprimer</label>
+			<label index="max_size">taille max</label>
+			<label index="publish">Publier</label>
+			<label index="last_publication">Dernière publication le</label>
+			<label index="screenshot">Photo d'écran</label>
+			<label index="logo">Logo</label>
+			<label index="categories">Categories</label>
+			<label index="new_application">Nouvelle application</label>
+			<label index="registration_validated">L'application a été enregistrée avec la clé</label>
+			<label index="application_already">Cette application existe déjà.</label>
+			<label index="file_delete">Fichier %1$s supprimé.</label>
+			<label index="file_uploaded">Fichier %1$s ajouté.</label>
+			<label index="file_error_uploaded">Une erreur est survenu lors du téléchargement du fichier %1$s. Veuillez réessayer.</label>
+			<label index="file_error_size">La taille du fichier %1$s est supérieure à la limite autorisée (%2$s Ko).</label>
+			<label index="file_error_extension">L'extension du fichier %1$s n'est pas autorisée.</label>
+			<label index="required_name">Le nom est obligatoire</label>
+			<label index="required_description">La description est obligatoire</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="fr" type="array">
+			<label index="pid_valid" type="integer">202772421</label>
+			<label index="nologin" type="integer">259484799</label>
+			<label index="application" type="integer">248373998</label>
+			<label index="name" type="integer">72122678</label>
+			<label index="description" type="integer">233169149</label>
+			<label index="platform" type="integer">140113247</label>
+			<label index="btn_registration" type="integer">12219779</label>
+			<label index="btn_back" type="integer">36398395</label>
+			<label index="application_updated" type="integer">239714325</label>
+			<label index="application_not_exists" type="integer">153520458</label>
+			<label index="link" type="integer">186721056</label>
+			<label index="filedelete" type="integer">24839944</label>
+			<label index="max_size" type="integer">44095746</label>
+			<label index="publish" type="integer">17867952</label>
+			<label index="last_publication" type="integer">160509292</label>
+			<label index="screenshot" type="integer">61848984</label>
+			<label index="logo" type="integer">146965882</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="fr" type="array">
+			<label index="pid_valid">The pid is not valid.</label>
+			<label index="nologin">Any user are connected.</label>
+			<label index="application">Update application</label>
+			<label index="name">Name * : </label>
+			<label index="description">Description * : </label>
+			<label index="platform">Platform : </label>
+			<label index="btn_registration">Register</label>
+			<label index="btn_back">Go back</label>
+			<label index="application_updated">The application is updated.</label>
+			<label index="application_not_exists">An error occured. The application was not found.</label>
+			<label index="link">Link : </label>
+			<label index="filedelete">delete file</label>
+			<label index="max_size">max size</label>
+			<label index="publish">Publish</label>
+			<label index="last_publication">Last publication</label>
+			<label index="screenshot">Screenshot</label>
+			<label index="logo">Logo</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

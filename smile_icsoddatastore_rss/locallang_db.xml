@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'smile_icsoddatastore'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_icsoddatastore_filegroups.tx_smileicsoddatastorerss_highlight">Highlight</label>
+			<label index="tt_content.list_type_pi1">RSS exports</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tx_icsoddatastore_filegroups.tx_smileicsoddatastorerss_highlight">Données à mettre en avant</label>
+			<label index="tt_content.list_type_pi1">Exports RSS</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,23 @@
+# $Id: ext_conf_template.txt 48432 2011-06-07 09:27:20Z emilieprudhomme $
+
+# cat=Basic//a; type=boolean; label=Maintenance Mode: Activate the maintenance mode. The API is disabled with error code 99.
+maintenance=0
+
+# cat=Basic//b; type=boolean; label=Shutdown Mode: Activate the shutdown mode. The API is disabled with error code 98.
+shutdown=0
+
+licence {
+	# cat=basic/licence/a; type=string; label=link: Link to licence for API command about.
+	link=
+	
+	# cat=basic/licence/b; type=string; label=logo: Link to licence's logo for API command about.
+	logo=
+}
+
+xmldoc {
+	# cat=basic/xmldoc/a; type=string; label=path: path to put down xml files.
+	path=fileadmin/xmldoc
+	
+	# cat=basic/xmldoc/b; type=string; label=version: version folder for xml files. Folder must exists.
+	version=v0
+}

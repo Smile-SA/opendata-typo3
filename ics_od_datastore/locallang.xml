@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'ics_od_datastore'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Opendata files store</label>
+			<label index="pi1_plus_wiz_description">opendatastore files</label>
+			<label index="sysfolder">Datastore</label>
+			<label index="pi2_title">Datastore RSS</label>
+			<label index="pi2_plus_wiz_description">Datastore RSS feed on filegroups</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="pi1_title">Entrepôt de fichiers</label>
+			<label index="pi1_plus_wiz_description">Entrepôt de fichiers</label>
+			<label index="sysfolder">Entrepôt</label>
+			<label index="pi2_title">Datastore RSS</label>
+			<label index="pi2_plus_wiz_description">Flux RSS des datasets</label>
+		</languageKey>
+	</data>
+</T3locallang>

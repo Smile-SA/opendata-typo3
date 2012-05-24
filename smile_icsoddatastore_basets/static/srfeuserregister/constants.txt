@@ -1,0 +1,54 @@
+email_from = reply@domain.com
+
+page_id {
+	# Uid of the profile edition page
+	my_profile = 
+	# Uid of the page containing fe_users
+	feusers = 
+}
+
+fe_group_id {
+	# Forum admin fe group uid
+	forum_admin = 
+	# Forum user fe group uid
+	forum_user = 
+	# Appstore fe group uid
+	appstore_form = 
+}
+
+plugin.tx_srfeuserregister_pi1 {
+	enableAdminNotifyOnApprove = 0
+	enableAdminNotifyOnUpdate = 0
+	enableEmailOnUpdate = 0
+	useMd5Password = 1
+	enableAutoLoginOnConfirmation = 1
+	enableAdminNotifyConfirmation = 0
+	useEmailAsUsername = 1
+	file.attachmentFile = 
+	siteName = Site name
+	passwordAtLeast = 6
+	passwordAtMost = 32
+	usernameAtLeast = 5
+	salutation = formal
+	dateFormat = d/m/Y
+	dateSplit = /
+	formFields = password, email, name
+	nameAtMost = 20
+	maxImages = 1
+	confirmInvitationPID = 0
+	confirmPID = 0
+	editPID = 0
+	loginPID = 0
+	linkToPID = 0
+	registerPID = 0
+	pidTitleOverride = Site name
+	requiredFields = username,password,email,name
+	# Forum user fe group uid
+	userGroupUponRegistration = 
+	# Forum user fe group uid
+	userGroupAfterConfirmation =
+	# Forum user fe group uid 
+	userGroupAfterAcceptation = 
+	defaultCODE = CREATE
+	enablePreviewEdit = 0
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Id: flexform_ds_pi1.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3DataStructure>
+	<meta>
+       <langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<configuration>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.configuration</sheetTitle>
+				</TCEforms>
+				<el>
+					<view>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.view</label>
+							<config>	
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.view.highlighted</numIndex>
+										<numIndex index="1">HIGHLIGHTED</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.view.all</numIndex>
+										<numIndex index="1">ALL</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>3</size>
+							</config>
+						</TCEforms>
+					</view>
+					<templateFile>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.templateFile</label>
+							<config type="array">
+								<type>input</type>
+								<size>30</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<wizards type="array">
+									<_PADDING>2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard</script>
+										<params type="array">
+											<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+											<allowedExtensions>htm,html,tmpl,tpl</allowedExtensions>
+										</params>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</templateFile>
+					<limit>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.limit</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<checkbox></checkbox>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</limit>
+					<datastorePid>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:smile_icsoddatastore_rss/pi1/locallang.xml:ff.datastorePid</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</datastorePid>
+				</el>
+			</ROOT>
+		</configuration>
+	</sheets>
+</T3DataStructure>

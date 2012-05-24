@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;tools_txicsapikrM1&quot;</description>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Commands documentation</label>
+			<label index="menu_title">Command documentation</label>
+			<label index="btn_update">update</label>
+			<label index="btn_save">save</label>
+			<label index="show_command">Command informations</label>
+			<label index="add_parameter">Parameters</label>
+			<label index="add_parameter.img">Add parameter</label>
+			<label index="del_parameter.img">Delete parameter</label>
+			<label index="add_value">Values</label>
+			<label index="add_value.img">Add value</label>
+			<label index="del_value.img">Delete value</label>
+			<label index="name">Name:</label>
+			<label index="cmd">Command:</label>
+			<label index="brief">Brief:</label>
+			<label index="description">Description:</label>
+			<label index="type">Type:</label>
+			<label index="type.enum">Enumeration</label>
+			<label index="type.number">Number</label>
+			<label index="type.string">String</label>
+			<label index="mandatory">Mandatory:</label>
+			<label index="default">Default value:</label>
+			<label index="value">Value:</label>
+			<label index="url">Url:</label>
+			<label index="enter_url">Enter url</label>
+			<label index="erreur_url">Please, check url.</label>
+			<label index="load_command">Load command</label>
+			<label index="new_command">New command</label>
+			<label index="xmldoc_error">xmldoc path is not configured.</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="title">Documentation des commandes</label>
+			<label index="menu_title">Infos générales de la commande</label>
+			<label index="btn_update">Mettre à jour</label>
+			<label index="btn_save">Enregistrer</label>
+			<label index="show_command">Informations de commande</label>
+			<label index="add_parameter">Paramètres</label>
+			<label index="add_parameter.img">Ajoute un paramètre</label>
+			<label index="del_parameter.img">Supprime le paramètre</label>
+			<label index="add_value">Valeurs</label>
+			<label index="add_value.img">Ajoute une valeur</label>
+			<label index="del_value.img">Supprime la valeur</label>
+			<label index="name">Nom :</label>
+			<label index="cmd">Commande :</label>
+			<label index="brief">Résumé :</label>
+			<label index="description">Description :</label>
+			<label index="type">Type :</label>
+			<label index="type.enum">Énumération</label>
+			<label index="type.number">Nombre</label>
+			<label index="type.string">Chaîne de caractères</label>
+			<label index="mandatory">Obligatoire :</label>
+			<label index="default">Valeur pas défaut :</label>
+			<label index="value">Valeur :</label>
+			<label index="url">Url :</label>
+			<label index="enter_url">Entrer l'url</label>
+			<label index="erreur_url">Veuillez vérifier l'url.</label>
+			<label index="load_command">Charger la commande</label>
+			<label index="new_command">Nouvelle commande</label>
+			<label index="xmldoc_error">Le chemin des documents xml n'est pas configuré.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="fr" type="array">
+			<label index="title" type="integer">259728301</label>
+			<label index="menu_title" type="integer">185392376</label>
+			<label index="btn_update" type="integer">61617160</label>
+			<label index="btn_save" type="integer">70746587</label>
+			<label index="show_command" type="integer">94509091</label>
+			<label index="add_parameter" type="integer">52582928</label>
+			<label index="add_parameter.img" type="integer">12004093</label>
+			<label index="del_parameter.img" type="integer">150802804</label>
+			<label index="add_value" type="integer">209888784</label>
+			<label index="add_value.img" type="integer">113632466</label>
+			<label index="del_value.img" type="integer">8498740</label>
+			<label index="name" type="integer">81871034</label>
+			<label index="cmd" type="integer">246378412</label>
+			<label index="brief" type="integer">243052698</label>
+			<label index="description" type="integer">218120871</label>
+			<label index="type" type="integer">241539922</label>
+			<label index="type.enum" type="integer">43355730</label>
+			<label index="type.number" type="integer">187623698</label>
+			<label index="type.string" type="integer">40966194</label>
+			<label index="mandatory" type="integer">102714980</label>
+			<label index="default" type="integer">173438500</label>
+			<label index="value" type="integer">181254146</label>
+			<label index="url" type="integer">180258115</label>
+			<label index="enter_url" type="integer">24944680</label>
+			<label index="erreur_url" type="integer">2320175</label>
+			<label index="load_command" type="integer">122352165</label>
+			<label index="new_command" type="integer">3971411</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="fr" type="array">
+			<label index="title">Commands documentation</label>
+			<label index="menu_title">Command documentation</label>
+			<label index="btn_update">update</label>
+			<label index="btn_save">save</label>
+			<label index="show_command">Command informations</label>
+			<label index="add_parameter">Parameters</label>
+			<label index="add_parameter.img">Add parameter</label>
+			<label index="del_parameter.img">Delete parameter</label>
+			<label index="add_value">Values</label>
+			<label index="add_value.img">Add value</label>
+			<label index="del_value.img">Delete value</label>
+			<label index="name">Name:</label>
+			<label index="cmd">Command:</label>
+			<label index="brief">Brief:</label>
+			<label index="description">Description:</label>
+			<label index="type">Type:</label>
+			<label index="type.enum">Enumeration</label>
+			<label index="type.number">Number</label>
+			<label index="type.string">String</label>
+			<label index="mandatory">Mandatory:</label>
+			<label index="default">Default value:</label>
+			<label index="value">Value:</label>
+			<label index="url">Url:</label>
+			<label index="enter_url">Enter url</label>
+			<label index="erreur_url">Please, check url.</label>
+			<label index="load_command">Load command</label>
+			<label index="new_command">New command</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

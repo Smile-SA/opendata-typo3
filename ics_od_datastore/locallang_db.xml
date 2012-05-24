@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang_db.xml 48489 2011-06-09 13:28:25Z tsimomo $ -->
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'ics_od_datastore'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_icsoddatastore_filegroups">File group (opendata)</label>
+			<label index="tx_icsoddatastore_filegroups.title">Title</label>
+			<label index="tx_icsoddatastore_filegroups.description">Description</label>
+			<label index="tx_icsoddatastore_filegroups.files">Files</label>
+			<label index="tx_icsoddatastore_filegroups.agency">Agency</label>
+			<label index="tx_icsoddatastore_filegroups.contact">Contact</label>
+			<label index="tx_icsoddatastore_filegroups.licence">Licence</label>
+			<label index="tx_icsoddatastore_filegroups.release_date">Date released</label>
+			<label index="tx_icsoddatastore_filegroups.update_date">Date updated</label>
+			<label index="tx_icsoddatastore_filegroups.time_period">Time period</label>
+			<label index="tx_icsoddatastore_filegroups.update_frequency">Frequency</label>
+			<label index="tx_icsoddatastore_filegroups.publisher">Publisher</label>
+			<label index="tx_icsoddatastore_filegroups.creator">Creator</label>
+			<label index="tx_icsoddatastore_filegroups.manager">Manager</label>
+			<label index="tx_icsoddatastore_filegroups.owner">Owner</label>
+			<label index="tx_icsoddatastore_filegroups.technical_data">Technical data</label>
+			<label index="tx_icsoddatastore_fileformats">FileFormat (opendata)</label>
+			<label index="tx_icsoddatastore_fileformats.name">Name</label>
+			<label index="tx_icsoddatastore_fileformats.description">Description</label>
+			<label index="tx_icsoddatastore_fileformats.mimetype">MIME type</label>
+			<label index="tx_icsoddatastore_fileformats.extension">File extension</label>
+			<label index="tx_icsoddatastore_fileformats.picto">Picto</label>
+			<label index="tx_icsoddatastore_fileformats.searchable">On peut rechercher</label>
+			<label index="tx_icsoddatastore_licences">Licence (opendata)</label>
+			<label index="tx_icsoddatastore_licences.name">name</label>
+			<label index="tx_icsoddatastore_licences.link">Link to licence</label>
+			<label index="tx_icsoddatastore_licences.logo">Link to licence logo</label>
+			<label index="tx_icsoddatastore_downloads">Download log entry (opendata)</label>
+			<label index="tx_icsoddatastore_downloads.filegroup">File group</label>
+			<label index="tx_icsoddatastore_downloads.ip">IP Address</label>
+			<label index="tx_icsoddatastore_downloads.file">File</label>
+			<label index="tx_icsoddatastore_files">File (opendata)</label>
+			<label index="tx_icsoddatastore_files.file">File</label>
+			<label index="tx_icsoddatastore_files.url">Url</label>
+			<label index="tx_icsoddatastore_files.format">Format</label>
+			<label index="tx_icsoddatastore_files.type">Type</label>
+			<label index="tx_icsoddatastore_files.filegroup">Group</label>
+			<label index="tx_icsoddatastore_files.record_type">Record type</label>
+			<label index="tx_icsoddatastore_files.record_type.0">file</label>
+			<label index="tx_icsoddatastore_files.record_type.1">url</label>
+			<label index="tx_icsoddatastore_files.md5">MD5</label>
+            <label index="tx_icsoddatastore_tiers">tiers (opendata)</label>
+            <label index="tx_icsoddatastore_tiers.name">name</label>
+            <label index="tx_icsoddatastore_tiers.description">Description</label>
+            <label index="tx_icsoddatastore_tiers.email">Email</label>
+            <label index="tx_icsoddatastore_tiers.website">Website</label>
+            <label index="tx_icsoddatastore_tiers.logo">Logo</label>
+            <label index="tx_icsoddatastore_tiers.address">Address</label>
+            <label index="tx_icsoddatastore_tiers.zipcode">Zip code</label>
+            <label index="tx_icsoddatastore_tiers.city">City</label>
+            <label index="tx_icsoddatastore_tiers.country">Country</label>
+            <label index="tx_icsoddatastore_tiers.latitude">Latitude</label>
+            <label index="tx_icsoddatastore_tiers.longitude">Longitude</label>
+			<label index="tx_icsoddatastore_filetypes">FileType (opendata)</label>
+			<label index="tx_icsoddatastore_filetypes.name">name</label>
+			<label index="tx_icsoddatastore_filetypes.description">Description</label>
+			<label index="tx_icsoddatastore_fileformats.searchable">Searchable</label>
+			<label index="tt_content.list_type_pi1">Data store</label>
+			<label index="tt_content.list_type_pi2">Data store RSS</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tx_icsoddatastore_filegroups">Groupe de fichier (opendata)</label>
+			<label index="tx_icsoddatastore_filegroups.title">Titre</label>
+			<label index="tx_icsoddatastore_filegroups.description">Description</label>
+			<label index="tx_icsoddatastore_filegroups.files">Fichiers</label>
+			<label index="tx_icsoddatastore_filegroups.agency">Agence</label>
+			<label index="tx_icsoddatastore_filegroups.contact">Contact</label>
+			<label index="tx_icsoddatastore_filegroups.licence">Licence</label>
+			<label index="tx_icsoddatastore_filegroups.release_date">Date de sortie</label>
+			<label index="tx_icsoddatastore_filegroups.update_date">Date de mise à jour</label>
+			<label index="tx_icsoddatastore_filegroups.time_period">Période de validité</label>
+			<label index="tx_icsoddatastore_filegroups.update_frequency">Fréquence</label>
+			<label index="tx_icsoddatastore_filegroups.publisher">Editeur</label>
+			<label index="tx_icsoddatastore_filegroups.creator">Créateur</label>
+			<label index="tx_icsoddatastore_filegroups.manager">Gestionnaire</label>
+			<label index="tx_icsoddatastore_filegroups.owner">Propriétaire</label>
+			<label index="tx_icsoddatastore_filegroups.technical_data">Données technique</label>
+			<label index="tx_icsoddatastore_fileformats">Format de fichier (opendata)</label>
+			<label index="tx_icsoddatastore_fileformats.name">Nom</label>
+			<label index="tx_icsoddatastore_fileformats.description">Description</label>
+			<label index="tx_icsoddatastore_fileformats.mimetype">Type MIME</label>
+			<label index="tx_icsoddatastore_fileformats.extension">Extension de fichier</label>
+			<label index="tx_icsoddatastore_fileformats.picto">Picto</label>
+			<label index="tx_icsoddatastore_fileformats.searchable">On peut rechercher</label>
+			<label index="tx_icsoddatastore_licences">Licence (opendata)</label>
+			<label index="tx_icsoddatastore_licences.name">Nom</label>
+			<label index="tx_icsoddatastore_licences.link">Lien vers la licence</label>
+			<label index="tx_icsoddatastore_licences.logo">Lien vers le logo de la licence</label>
+			<label index="tx_icsoddatastore_downloads">Entrée de journal de téléchargement (opendata)</label>
+			<label index="tx_icsoddatastore_downloads.filegroup">Groupe de fichiers</label>
+			<label index="tx_icsoddatastore_downloads.ip">Adresse IP</label>
+			<label index="tx_icsoddatastore_downloads.file">Fichier</label>
+			<label index="tx_icsoddatastore_files">Fichier (opendata)</label>
+			<label index="tx_icsoddatastore_files.file">Fichier</label>
+			<label index="tx_icsoddatastore_files.url">Url</label>
+			<label index="tx_icsoddatastore_files.format">Format</label>
+			<label index="tx_icsoddatastore_files.type">Type</label>
+			<label index="tx_icsoddatastore_files.filegroup">Groupe</label>
+ 			<label index="tx_icsoddatastore_files.record_type">Type d'enregistrement</label>
+			<label index="tx_icsoddatastore_files.record_type.0">Fichier</label>
+			<label index="tx_icsoddatastore_files.record_type.1">Url</label>
+			<label index="tx_icsoddatastore_files.md5">MD5</label>
+            <label index="tx_icsoddatastore_tiers">Tiers (opendata)</label>
+            <label index="tx_icsoddatastore_tiers.name">Nom</label>
+            <label index="tx_icsoddatastore_tiers.description">Description</label>
+            <label index="tx_icsoddatastore_tiers.email">Email</label>
+            <label index="tx_icsoddatastore_tiers.website">Site web</label>
+            <label index="tx_icsoddatastore_tiers.logo">Logo</label>
+            <label index="tx_icsoddatastore_tiers.address">Adresse</label>
+            <label index="tx_icsoddatastore_tiers.zipcode">Code Postal</label>
+            <label index="tx_icsoddatastore_tiers.city">Ville</label>
+            <label index="tx_icsoddatastore_tiers.country">Pays</label>
+            <label index="tx_icsoddatastore_tiers.latitude">Latitude</label>
+            <label index="tx_icsoddatastore_tiers.longitude">Longitude</label>
+			<label index="tx_icsoddatastore_filetypes">Type de fichier (opendata)</label>
+			<label index="tx_icsoddatastore_filetypes.name">Nom</label>
+			<label index="tx_icsoddatastore_filetypes.description">Description</label>
+			<label index="tt_content.list_type_pi1">Jeux de données</label>
+			<label index="tt_content.list_type_pi2">Jeux de données RSS</label>
+		</languageKey>
+	</data>
+</T3locallang>

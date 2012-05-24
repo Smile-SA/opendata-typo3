@@ -1,0 +1,63 @@
+# $Id: constants.txt 48432 2011-06-07 09:27:20Z emilieprudhomme $
+
+config.tx_icsoddatastore_pi1 {
+	# cat=plugin.tx_icsoddatastore_pi1/file/a; type=file[html]; label=Template to use: The template file to use.
+	templateFile = EXT:ics_od_datastore/res/template.html
+	
+	# cat=plugin.tx_icsoddatastore_pi1/other/a; type=int+; label=Icon max width: Max width of file format icon.
+	fileFormatPictoMaxW = 62
+	
+	# cat=plugin.tx_icsoddatastore_pi1/other/b; type=int+; label=Icon max height: Max height of file format icon.
+	fileFormatPictoMaxH = 20
+	
+	# cat=plugin.tx_icsoddatastore_pi1/other/c; type=int+; label=Number filegroups by page: Number filegroups by page.
+	nbFileGroupByPage = 10
+	
+	# cat=plugin.tx_icsoddatastore_pi1/page/c; type=int+; label=page for the single view: page for the single view.
+	singlePid = 0
+	
+	# cat=plugin.tx_icsoddatastore_pi1/page/c; type=int+; label=page for results search list: page for results search list.
+	resultsSearchPid = 0
+	
+	displayList {
+		
+		# cat=plugin.tx_icsoddatastore_pi1/other/a; type=string; label=Fields list: Fields list (separate with comma).
+		fields = title,description,publisher,files,tstamp
+		
+		# cat=plugin.tx_icsoddatastore_pi1/other/a; type=string; label=Field of file: Field name of file.
+		fileField = files 
+		
+		# cat=plugin.tx_icsoddatastore_pi1/other/a; type=string; label=file link: file link.
+		fileLink = 1 
+		
+		sort {
+			# cat=plugin.tx_icsoddatastore_pi1/other/a; type=boolean; label=Sort by update date: Sort by update date.
+			tstamp.day = 1
+
+			# cat=plugin.tx_icsoddatastore_pi1/other/a; type=boolean; label=Sort by title: Sort by title.
+			title = 0
+
+			sortImg {
+				# cat=plugin.tx_icsoddatastore_pi1/other/a; type=file[gif]; label=Sort icon: Sort icon.
+				inactive = typo3conf/ext/ics_od_datastore/res/img_sortInactive.gif
+				
+				# cat=plugin.tx_icsoddatastore_pi1/other/a; type=file[gif]; label=Sort asc icon: Sort asc icon.
+				asc = typo3conf/ext/ics_od_datastore/res/img_sortAsc.gif
+				
+				# cat=plugin.tx_icsoddatastore_pi1/other/a; type=file[gif]; label=Sort desc icon: Sort desc icon.
+				desc = typo3conf/ext/ics_od_datastore/res/img_sortDesc.gif
+			} 
+		}
+
+		# cat=plugin.tx_icsoddatastore_pi1/other/a; type=boolean; label=File format: Render only searched file formats
+		renderOnlySearchedFileFormats = 1
+	}
+	
+	displaySingle {
+		# cat=plugin.tx_icsoddatastore_pi1/other/a; type=string; label=Fields list: Fields list (separate with comma).
+		fields = uid,title,publisher,agency,time_period,update_date,update_frequency,description,technical_data,contact,files,licence,release_date,creator,manager,owner
+		
+		# cat=plugin.tx_icsoddatastore_pi1/other/a; type=string; label=Field of file: Field name of file.
+		fileField = files 
+	}
+}

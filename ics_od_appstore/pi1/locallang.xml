@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_icsodappstore_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="titre">Applications</label>
+			<label index="name">Application</label>
+			<label index="description">Description</label>
+			<label index="platform">Platform</label>
+			<label index="logo">Logo</label>
+			<label index="key">Key</label>
+			<label index="nologin">Any user are connected..</label>
+			<label index="edit">Edit</label>
+			<label index="create">Create</label>
+			<label index="view">View</label>
+			<label index="link_publish">Publish</label>
+			<label index="link_unpublish">Unpublish</label>
+			<label index="publish">Published</label>
+			<label index="publication_status_no">No</label>
+			<label index="publication_status_yes">Yes</label>
+			<label index="publication_status_lock">Application bloquée</label>
+			<label index="stat">Stat</label>
+			<label index="actions">Actions</label>
+			<label index="error_publish">Error publish, application doesn't exist</label>
+			<label index="success_publish">Application %1$s published.</label>
+			<label index="success_unpublish">Application %1$s unpublished.</label>
+			<label index="message_empty">Pas encore d'application ?</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="titre">Liste des applications</label>
+			<label index="name">Application</label>
+			<label index="description">Description</label>
+			<label index="platform">Plateforme</label>
+			<label index="key">Clé</label>
+			<label index="nologin">Merci de vous identifier, pour pouvoir accéder aux applications.</label>
+			<label index="edit">Éditer</label>
+			<label index="create">Créer une nouvelle application</label>
+			<label index="link_publish">Publier</label>
+			<label index="link_unpublish">Dépublier</label>
+			<label index="view">Voir</label>
+			<label index="publish">Publiée</label>
+			<label index="publication_status_no">Non</label>
+			<label index="publication_status_yes">Oui</label>
+			<label index="stat">Statistiques</label>
+			<label index="error_publish">Une erreur s'est produite lors de la publication, l'application n'existe pas.</label>
+			<label index="success_publish">L'application %1$s a bien été publiée.</label>
+			<label index="success_unpublish">L'application %1$s a bien été dépubliée.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="fr" type="array">
+			<label index="titre" type="integer">31322931</label>
+			<label index="name" type="integer">239699785</label>
+			<label index="description" type="integer">190479069</label>
+			<label index="platform" type="integer">68809588</label>
+			<label index="key" type="integer">144127337</label>
+			<label index="nologin" type="integer">72023845</label>
+			<label index="edit" type="integer">131916066</label>
+			<label index="publish" type="integer">163174569</label>
+			<label index="publication_status_no" type="integer">196073266</label>
+			<label index="publication_status_yes" type="integer">154974727</label>
+			<label index="stat" type="integer">50196875</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="fr" type="array">
+			<label index="titre">Applications</label>
+			<label index="name">Application</label>
+			<label index="description">Description</label>
+			<label index="platform">Platform</label>
+			<label index="key">Key</label>
+			<label index="nologin">Any user are connected..</label>
+			<label index="edit">Edit</label>
+			<label index="publish">Published</label>
+			<label index="publication_status_no">No</label>
+			<label index="publication_status_yes">Yes</label>
+			<label index="stat">Stat</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

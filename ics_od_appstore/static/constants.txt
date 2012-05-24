@@ -1,0 +1,44 @@
+config.ics_od_appstore {
+	# cat=plugin.ics_od_appstore/configuration/; type=int; label= pidStorage : Storage folder for api's key
+	pid =
+	# cat=plugin.ics_od_appstore/configuration/; type=string; label= Usergroup : api usergroups, separated by coma
+	usergroup =
+	# cat=plugin.ics_od_appstore/configuration/; type=int; label= Edit : Edit page id for api's key
+	edit = 
+	# cat=plugin.ics_od_appstore/configuration/; type=int; label= Stat : Stat page id for api's key
+	stat =
+	
+	# cat=plugin.ics_od_appstore/configuration/; type=int; label= Create : Create page id for api's key
+	create =
+	
+	# cat=plugin.ics_od_appstore/configuration/; type=int; label= View : View page id for api's key
+	view =
+
+	# cat=plugin.ics_od_appstore/configuration/; type=string; label= Template file : The template file path
+	template = 
+	
+	list {
+		# cat=plugin.ics_od_appstore/list/; type=int; label= Columns number
+		colNum = 2
+		
+		# cat=plugin.ics_od_appstore/list/; type=int; label= Rows by columns
+		rowsByCol = 3
+		
+		# cat=plugin.ics_od_appstore/list/; type=string; label= Default field sort
+		orderDefault = release_date
+		
+		# cat=plugin.ics_od_appstore/list/; type=string; label= Available fields sorting
+		orderAvailable = release_date,countcall
+		
+		# cat=plugin.ics_od_appstore/list/; type=int; label= Max description characters 
+		descSize = 220
+		
+		logo {
+			# cat=plugin.ics_od_appstore/list/; type=file; label= Default image application 
+			default = typo3conf/ext/ics_od_appstore/res/default.png
+		}
+	}
+
+	# cat=plugin.ics_od_appstore/configuration/; type=boolean; label= Activate application rating
+	ratings = 1 
+}

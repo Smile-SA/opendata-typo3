@@ -1,0 +1,233 @@
+[globalVar = TSFE:id={$page_id.my_profile}]
+	plugin.tx_srfeuserregister_pi1 {
+		defaultCODE = EDIT
+		create {
+			fields = first_name, last_name, image, name, email, password
+			required = 
+		}
+		edit < .create
+		edit {
+			preview = {$plugin.tx_srfeuserregister_pi1.enablePreviewEdit}
+			allowUserGroupSelection = {$plugin.tx_srfeuserregister_pi1.allowUserGroupUpdate}
+
+			defaultValues {
+				disable = 0
+				usergroup >
+				module_sys_dmail_html >
+				module_sys_dmail_category >
+				by_invitation >
+			}
+
+			overrideValues {
+				username =
+				usergroup >
+				disable = 0
+				by_invitation >
+			}
+
+			evalValues {
+				username = unsetEmpty
+				usergroup = unsetEmpty
+			}
+		}
+	}
+[global]
+
+plugin.tx_srfeuserregister_pi1 {
+	email.from = {$email_from}
+	email.admin = {$email_from}
+	pid = {$page_id.feusers}
+	create {
+		evalValues {
+			password = atLeast[{$plugin.tx_srfeuserregister_pi1.passwordAtLeast}], atMost[{$plugin.tx_srfeuserregister_pi1.passwordAtMost}]
+		}
+	}
+	displayRequired = TEXT
+	displayRequired {
+		value = 
+	}
+
+	create {
+		defaultValues {
+			usergroup = {$fe_group_id.forum_user},{$fe_group_id.appstore_form}
+		}
+		overrideValues {
+			usergroup = {$fe_group_id.forum_user},{$fe_group_id.appstore_form}
+		}
+	}
+	setfixed.APPROVE {
+		usergroup = {$fe_group_id.forum_user},{$fe_group_id.appstore_form}
+	}
+	setfixed.ACCEPT {
+		usergroup = {$fe_group_id.forum_user},{$fe_group_id.appstore_form}
+	}
+
+	_LOCAL_LANG.fr {
+		unsupported = non supporté
+
+		username = Identifiant :
+		tooltip_username = Saisissez un identifiant.
+		tooltip_login_username = Saisissez votre identifiant.
+		missing_username = Veuilelz saisir un identifiant.
+		evalErrors_atLeast_username = L'identifiant doit être composé d'au moins %s caractères !
+		evalErrors_atMost_username = L'identifiant doit être composé d'au plus %s caractères !
+		evalErrors_uniqueLocal_username = Cet identifiant est déjà associée à un autre compte.
+		evalErrors_uniqueGlobal_username = Cet identifiant est déjà associée à un autre compte.
+		
+		password = Choisissez un mot de passe :
+		tooltip_password = Choisissez un mot de passe.
+		tooltip_login_password = Saisissez votre mot de passe.
+		missing_password = Veuillez saisir un mot de passe !
+		evalErrors_atLeast_password = Le mot de passe doit être composé d'au moins %s caractères !
+		evalErrors_atMost_password = Le mot de passe doit être composé d'au plus %s caractères !
+		evalErrors_twice_password = Vous devez entrer deux fois le même mot de passe !
+		password_again = Répétez le mot de passe :
+		tooltip_password_again = Saisissez à nouveau votre mot de passe.
+
+		name = Pseudo :
+		tooltip_name = Saisissez un pseudonyme.
+		missing_name = Veuillez saisir un pseudonyme !
+
+		first_name = Prénom :
+		tooltip_first_name = Saisissez votre prénom.
+		missing_first_name = Veuillez saisir votre prénom !
+		
+		last_name = Nom :
+		tooltip_last_name = Saisissez votre nom.
+		missing_last_name = Veuillez saisir votre nom !
+		
+		email = Adresse mail :
+		tooltip_email = Saisissez votre adresse mail.
+		missing_email = Veuillez saisir une adresse mail valide !
+		evalErrors_email = Veuillez saisir un adresse mail valide.
+		evalErrors_email_email = L'adresse saisie n'est pas valide.
+		evalErrors_valid_email = Veuillez saisir un adresse mail valide.
+		evalErrors_uniqueLocal_email = Cette adresse mail est déjà associée à un autre compte.
+
+		yes = Oui
+		no = Non
+
+		image = Avatar :
+		tooltip_image = Sélectionnez un fichier image qui vous servira d'avatar.
+		missing_image = Veuillez sélectionner un fichier image qui vous servira d'avatar !
+		icon_delete = effacer
+		file_view = visualiser
+		confirm_file_delete = Souhaitez-vous réellement effacer ce fichier ?
+		evalErrors_allowed_image = L'extension de fichier %s n'est pas autorisée.
+		evalErrors_max_size_image = Le fichier ne doit pas dépasser %s Ko.
+		
+		evalErrors_atLeast = Vous devez saisir au moins %s caractères !
+		evalErrors_atleast_characters = Vous devez saisir au moins %s caractères !
+		evalErrors_atmost_characters = Vous devez saisir au plus %s caractères !
+		evalErrors_atMost = Vous devez saisir au plus %s caractères !
+		evalErrors_existed_already = Cette valeur est déjà associée à un autre compte.
+		evalErrors_file_extension = L'extension de fichier %s n'est pas autorisée.
+		evalErrors_preg = Cette valeur n'est pas conforme à ce qui est attendu.
+		evalErrors_required = Champ obligatoire !
+		evalErrors_size_too_large = Le fichier dépasse la limite de %s Ko.
+		evalErrors_uniqueLocal = Cette valeur est déjà associée à un autre compte.
+		evalErrors_uniqueGlobal = Cette valeur est déjà associée à un autre compte.
+		
+		tooltip_comments = Saisissez un commentaire.
+		
+		button_register = valider
+		button_confirm_register = valider
+		button_back_to_form = annuler
+		button_update = mettre à jour
+		button_confirm_update = mettre à jour
+		button_update_and_more = mettre à jour et continuer...
+		button_enter = valider
+		button_confirm_delete = valider
+		button_cancel_delete = annuler
+		button_password_forgotten = mot de passe oublié
+		
+		click_here_to_register = Si vous n'êtes pas inscrits, veuillez cliquer ici pour vous enregistrer.
+		tooltip_click_here_to_register = Affiche le formulaire d'inscription.
+		click_here_to_edit = Veuillez cliquer ici pour éditer votre profil ou supprimer votre compte.
+		tooltip_click_here_to_edit = Affiche le formulaire d'édition de votre compte personnel.
+		click_here_to_delete = supprimer définitivement votre compte
+		tooltip_click_here_to_delete = Entamme la procédure de suppression de compte.
+
+		enter_account_info = Pour vous inscrire, veuillez saisir les informations requises.
+		required_info_notice = Assurez vous d'avoir rempli tous les champs obligatoires.
+		copy_paste_link = (ou bien copier & coller l'adresse de ce lien dans un navigateur).
+		excuse_us = 
+		registration_problem = Il semble qu'il y ait eu un problème !
+		registration_sorry = Désolé, il n'est malheureusement pas possible de finaliser cette procédure !
+		registration_clicked_twice = Peut-être avez-vous cliquez plusieurs fois sur le même lien ?
+		registration_help = Si le problème persiste, veuillez entrer en contact avec nous.
+		
+		kind_regards = Cordialement,
+		kind_regards_cre = Nous vous souhaitons la bienvenue sur le site.
+		kind_regards_del = Cordialement, 
+		kind_regards_ini = Nous vous souhaitons la bienvenue sur le site.
+		kind_regards_inv = Nous vous souhaitons la bienvenue sur le site.
+		kind_regards_upd = Cordialement,
+		
+		v_really_wish_to_delete = Souhaitez-vous réellement supprimer votre compte ?
+		v_verify_before_create = Veuillez vérifier l'ensemble des informations avant que votre compte ne soit créé.
+		v_edit_your_account = vous souhaitez éditer votre compte :
+		v_verify_before_update = Veuillez vérifier l'ensemble des informations avant que votre compte ne soit mis à jour.
+		v_dear = Bonjour,
+		v_infomail_dear = Bonjour,
+		v_infomail_lost_password = Veuillez saisir l'adresse mail utilisée lors de votre inscription.
+		v_infomail_lost_password_confirm = Un message vous a été envoyé à l'adresse %4$s.
+		v_infomail_lost_password_subject = Information concernant votre compte
+		v_to_the_administrator = Pour les administrateurs concernant %1$s
+		v_now_enter_your_username = Veuillez saisir votre identifiant et votre mot de passe.
+		v_notification = Notification
+		v_registration_created_subject = Inscription sur le site %1$s
+		v_registration_created_message1 = Votre inscription avec le compte %2$s a été confirmée.
+		v_registration_created_message2 = Votre adresse mail a donc été ajouté à la liste de nos membres.
+		v_registration_created = %3$s est maintenant membre du site.
+		v_registration_updated_subject = Votre compte a été mis à jour.
+		v_registration_updated_message1 = Nous vous remercions de garder votre compte à jour.
+		v_registration_updated = %3$s a mis à jour son profil.
+		v_please_confirm = Veuillez confirmer votre inscription.
+		v_your_account_was_created = Votre inscription <strong>%2$s</strong> a bien été prise en compte. Pour finaliser ce processus, vous allez recevoir un mail qui vous permettra d'activer votre compte.
+		v_your_account_was_created_nomail = Votre inscription %2$s a bien été confirmée. Votre adresse mail %4$s est déjà utilisée. Vous êtes maintenant enregistré en tant que %1$s.
+		v_registration_initiated_subject = Inscription sur le site %1$s
+		v_registration_initiated_message1 = Nous remercions de vous être inscrits récemment sur le site %1$s. Pour finaliser votre inscription, veuillez cliquer sur le lien ci-dessous :
+		v_registration_initiated_message2 = Si pour une raison quelconque, vous ne souhaitiez pas finaliser cette inscription ou si vous avez reçu ce message par erreur, veuillez cliquer sur le lien suivant :
+		v_registration_initiated_message3 = 
+		v_registration_initiated_review1 = Nous vous remercions de vous être inscrit sur le site %1$s. Vous allez devoir confirmer votre inscription pour obtenir un accès complet. Pour cela, veuillez cliquer sur le lien ci-dessous :
+		v_registration_initiated_review2 = Notez que votre inscription sera ensuite soumise à la validation d'un administrateur du site.
+		v_registration_initiated = %3$s a lancé son inscription sur le site %1$s.
+		v_registration_review_subject = Veuillez examiner la demande d'inscription de %3$s
+		v_registration_review_message1 = Pour accepter
+		v_registration_review_message2 = Pour refuser
+		v_registration_review_message3 = Pour éditer
+		v_registration_infomail_message1 = Vos informations d'authentifications sont les suivantes : nom d'utilisateur "%2$s" et mot de passe "%5$s".
+		v_registration_confirmed_subject = Inscription confirmée sur le site %1$s
+		v_registration_confirmed_message1 = Votre inscription avec le compte %2$s a été confirmée.
+		v_registration_confirmed_message2 = 
+		v_registration_confirmed_review1 = Votre demande d'inscription avec le compte %2$s a été confirmée.
+		v_registration_confirmed_review2 = Elle va maintenant être examinée par un administrateur. Vous serez informés des suites par mail.
+		v_registration_confirmed = %3$s a confirmé son inscription sur le site %1$s.
+		v_registration_cancelled_subject = Inscription annulée
+		v_registration_cancelled_message1 = Conformément à votre demande, votre inscription a été annulée. De fait, votre adresse mail n'est plus enregistrée chez nous.
+		v_registration_cancelled_message2 = Si vous le souhaitez, vous pouvez naviguer dans l'espace public de notre site. Vous avez toujours la possibilité de vous réinscrire et nous serons heureux de vous compter parmi nos membres.
+		v_registration_cancelled = %3$s a annulé son inscription sur le site %1$s.
+		v_registration_accepted_subject = Demande d'inscription acceptée
+		v_registration_accepted_message1 = 
+		v_registration_accepted_message2 = 
+		v_registration_accepted_subject2 = 
+		v_registration_accepted_message3 = 
+		v_registration_accepted_message4 = 
+		v_registration_accepted = La demande d'inscription de %3$s sur le site %1$s a été acceptée.
+		v_registration_refused_subject = Demande d'inscription rejetée
+		v_registration_refused_message1 = 
+		v_registration_refused_message2 = 
+		v_registration_refused = La demande d'inscription de %3$s sur le site %1$s a été rejetée.
+		v_registration_refused_subject2 = Demande d'inscription rejetée
+		v_registration_refused_message3 = 
+		v_registration_refused_message4 = 
+		v_registration_entered_subject = Inscription confirmée sur le site %1$s
+		v_registration_entered_message1 = Votre inscription a été acceptée.
+		v_registration_entered_message2 = 
+		v_registration_deleted_subject = Supression de compte sur le site %1$s
+		v_registration_deleted_message1 = Conformément à votre demande, votre compte a été supprimé. De fait, votre adresse mail n'est plus enregistrée chez nous.
+		v_registration_deleted_message2 = Si vous le souhaitez, vous pouvez naviguer dans l'espace public de notre site. Vous avez toujours la possibilité de vous réinscrire et nous serons heureux de vous compter parmi nos membres.
+		v_registration_deleted = %3$s a supprimé son compte sur le site %1$s.
+	}
+}

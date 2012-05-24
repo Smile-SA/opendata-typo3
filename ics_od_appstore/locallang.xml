@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'ics_od_appstore'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Display OD developpers applications list</label>
+			<label index="pi1_plus_wiz_description">Display OD developpers applications</label>
+			<label index="pi2_title">OD Application form</label>
+			<label index="pi2_plus_wiz_description">Add/Edit OD application</label>
+			<label index="pi3_title">Statistics</label>
+			<label index="pi3_plus_wiz_description">OD Developpers applications statistics</label>
+			<label index="pi4_title">OD Applications store</label>
+			<label index="pi4_plus_wiz_description">OD Applications store</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="pi1_title">Affiche la liste des applications développeurs OD</label>
+			<label index="pi1_plus_wiz_description">Affiche la liste des applications OD</label>
+			<label index="pi2_title">Formulaire d'application OD</label>
+			<label index="pi2_plus_wiz_description">Ajouter/Editer une application OD</label>
+			<label index="pi3_title">Statistiques OD</label>
+			<label index="pi3_plus_wiz_description">Statistiques des applications OD des développeurs</label>
+			<label index="pi4_title">Catalogue d'applications OD</label>
+			<label index="pi4_plus_wiz_description">Catalogue d'applications OD</label>
+		</languageKey>
+	</data>
+</T3locallang>

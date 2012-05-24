@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Id: getlicences.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<command name="Get licences" cmd="datastore_getlicencies" brief="Retrieves licences.">
+	<description>Retrieves datastore licences.</description>
+</command>

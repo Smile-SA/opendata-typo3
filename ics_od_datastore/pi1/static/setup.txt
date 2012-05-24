@@ -1,0 +1,520 @@
+# $Id: setup.txt 48432 2011-06-07 09:27:20Z emilieprudhomme $
+
+plugin.tx_icsoddatastore_pi1{
+	templateFile = {$config.tx_icsoddatastore_pi1.templateFile}
+	fileFormatPictoMaxW = {$config.tx_icsoddatastore_pi1.fileFormatPictoMaxW}
+	fileFormatPictoMaxH = {$config.tx_icsoddatastore_pi1.fileFormatPictoMaxH}
+	nbFileGroupByPage = {$config.tx_icsoddatastore_pi1.nbFileGroupByPage}
+	
+	displayList {
+		fields = {$config.tx_icsoddatastore_pi1.displayList.fields}
+		fileField = {$config.tx_icsoddatastore_pi1.displayList.fileField}
+		
+		title_stdWrap.stdWrap {
+			wrap = <h3>|</h3>
+		}
+		
+		description_stdWrap.stdWrap {
+			br = 1
+			wrap = <p class="description">|</p>
+		}
+		
+		agency_stdWrap.stdWrap {
+			wrap = <p class="listValue agency">|</p>
+		}
+		agency_label_stdWrap.stdWrap {
+			wrap = <p class="label agency">|</p>
+		}
+		
+		publisher_stdWrap.stdWrap {
+			wrap = <p class="listValue publisher">|</p>
+		}
+		publisher_label_stdWrap.stdWrap {
+			wrap = <p class="label publisher">|</p>
+		}
+		
+		update_date_stdWrap.stdWrap {
+			wrap = <p class="update_date">|</p>
+			strftime = %d %B %Y
+		}
+		update_date_label_stdWrap.stdWrap {
+			wrap = <p class="label update_date">|</p>
+		}
+		
+		update_frequency_stdWrap.stdWrap {
+			wrap = <p class="listValue update_frequency">|</p>
+		}
+		update_frequency_label_stdWrap.stdWrap {
+			wrap = <p class="label update_frequency">|</p>
+		}
+		
+		time_period_stdWrap.stdWrap {
+			wrap = <p class="listValue time_period">|</p>
+		}
+		time_period_label_stdWrap.stdWrap {
+			wrap = <p class="label time_period">|</p>
+		}
+		
+		intro_stdWrap.stdWrap {
+			wrap = <p class="label intro">|</p>
+		}
+		
+		formatavaillable_stdWrap.stdWrap {
+			wrap = <p class="label intro">|</p>
+		}
+		
+		contact_stdWrap.stdWrap {
+			wrap = <p class="listValue contact">|</p>
+		}
+		contact_label_stdWrap.stdWrap {
+			wrap = <p class="label contact">|</p>
+		}
+		
+		release_date_stdWrap.stdWrap {
+			wrap = <p class="listValue release_date">|</p>
+			strftime = %d %B %Y
+		}
+		release_date_label_stdWrap.stdWrap {
+			wrap = <p class="label release_date">|</p>
+		}
+		
+		creator_stdWrap.stdWrap {
+			wrap = <p class="listValue creator">|</p>
+		}
+		creator_label_stdWrap.stdWrap {
+			wrap = <p class="label creator">|</p>
+		}
+		
+		manager_stdWrap.stdWrap {
+			wrap = <p class="listValue manager">|</p>
+		}
+		manager_label_stdWrap.stdWrap {
+			wrap = <p class="label manager">|</p>
+		}
+		
+		owner_stdWrap.stdWrap {
+			wrap = <p class="listValue owner">|</p>
+		}
+		owner_label_stdWrap.stdWrap {
+			wrap = <p class="label owner">|</p>
+		}
+		
+		licence_stdWrap.stdWrap {
+			wrap = <p class="listValue owner">|</p>
+		}
+		licence_label_stdWrap.stdWrap {
+			wrap = <p class="label owner">|</p>
+		}
+		
+		tstamp_stdWrap.stdWrap {
+			wrap = <p class="tstamp">|</p>
+			strftime = %d %B %Y
+		}
+		tstamp_label_stdWrap.stdWrap {
+			wrap = <p class="label tstamp">|</p>
+		}
+
+		# Link to file for data type
+		fileLink = {$config.tx_icsoddatastore_pi1.displayList.fileLink}
+		
+		# Sort on record's update day
+		sort {
+			tstamp.day = {$config.tx_icsoddatastore_pi1.displayList.sort.tstamp.day}
+			title = {$config.tx_icsoddatastore_pi1.displayList.sort.title}
+			sortImg {
+				inactive = {$config.tx_icsoddatastore_pi1.displayList.sort.sortImg.inactive}
+				asc = {$config.tx_icsoddatastore_pi1.displayList.sort.sortImg.asc}
+				desc = {$config.tx_icsoddatastore_pi1.displayList.sort.sortImg.desc}
+			} 
+		}
+
+		renderOnlySearchedFileFormats = {$config.tx_icsoddatastore_pi1.displayList.renderOnlySearchedFileFormats}
+	}
+	
+	displaySingle {
+		fields = {$config.tx_icsoddatastore_pi1.displaySingle.fields}
+		fileField = {$config.tx_icsoddatastore_pi1.displaySingle.fileField}
+		
+		title_stdWrap.stdWrap {
+			wrap = <h3>|</h3>
+		}
+		
+		uid_stdWrap.stdWrap {
+			wrap = <p class="value uid">|</p>
+		}
+		uid_label_stdWrap.stdWrap {
+			wrap = <p class="label dui">|</p>
+		}
+		
+		description_stdWrap.stdWrap {
+			wrap = <p class="value description">|</p>
+		}
+		description_label_stdWrap.stdWrap {
+			wrap = <p class="label description">|</p>
+		}
+		
+		technical_data_stdWrap.stdWrap {
+			wrap = <p class="value technical_data">|</p>
+		}
+		technical_data_label_stdWrap.stdWrap {
+			wrap = <p class="label technical_data">|</p>
+		}
+		
+		agency_stdWrap.stdWrap {
+			wrap = <p class="value agency">|</p>
+		}
+		agency_label_stdWrap.stdWrap {
+			wrap = <p class="label agency">|</p>
+		}
+		
+		publisher_stdWrap.stdWrap {
+			wrap = <p class="value publisher">|</p>
+		}
+		publisher_label_stdWrap.stdWrap {
+			wrap = <p class="label publisher">|</p>
+		}
+		
+		update_date_stdWrap.stdWrap {
+			wrap = <p class="value update_date">|</p>
+			strftime = %d %B %Y
+			#if.isTrue.field = update_date
+		}
+		update_date_label_stdWrap.stdWrap {
+			wrap = <p class="label update_date">|</p>
+		}
+		
+		update_frequency_stdWrap.stdWrap {
+			wrap = <p class="value update_frequency">|</p>
+		}
+		update_frequency_label_stdWrap.stdWrap {
+			wrap = <p class="label update_frequency">|</p>
+		}
+		
+		time_period_stdWrap.stdWrap {
+			wrap = <p class="value time_period">|</p>
+		}
+		time_period_label_stdWrap.stdWrap {
+			wrap = <p class="label time_period">|</p>
+		}
+		
+		intro_stdWrap.stdWrap {
+			wrap = <p class="label intro">|</p>
+		}
+
+		other_data_stdWrap.stdWrap {
+			wrap = <p class="label intro">|</p>
+		}
+		
+		formatavaillable_stdWrap.stdWrap {
+			wrap = <p class="label intro">|</p>
+		}
+		
+		contact_stdWrap.stdWrap {
+			wrap = <p class="value contact">|</p>
+		}
+		contact_label_stdWrap.stdWrap {
+			wrap = <p class="label contact">|</p>
+		}
+		
+		release_date_stdWrap.stdWrap {
+			wrap = <p class="value release_date">|</p>
+			strftime = %d %B %Y
+		}
+		release_date_label_stdWrap.stdWrap {
+			wrap = <p class="label release_date">|</p>
+		}
+		
+		creator_stdWrap.stdWrap {
+			wrap = <p class="value creator">|</p>
+		}
+		creator_label_stdWrap.stdWrap {
+			wrap = <p class="label creator">|</p>
+		}
+		
+		manager_stdWrap.stdWrap {
+			wrap = <p class="value manager">|</p>
+		}
+		manager_label_stdWrap.stdWrap {
+			wrap = <p class="label manager">|</p>
+		}
+		
+		owner_stdWrap.stdWrap {
+			wrap = <p class="value owner">|</p>
+		}
+		owner_label_stdWrap.stdWrap {
+			wrap = <p class="label owner">|</p>
+		}
+		
+		licence_stdWrap.stdWrap {
+			wrap = <p class="value owner">|</p>
+		}
+		licence_label_stdWrap.stdWrap {
+			wrap = <p class="label owner">|</p>
+		}
+	}
+	
+	_CSS_DEFAULT_STYLE (
+div.tx_icsoddatastore_pi1_intro {
+	background-color:#f2f2f2;
+	padding:0.75em;
+}
+
+div.tx_icsoddatastore_pi1_intro p.intro {
+	color:#0647a4;
+	font-weight:bold;
+	
+}
+
+div.tx-icsoddatastore-pi1 .label {
+	float:left;
+	width:15em;
+	color:#0647a4;
+}
+
+div.tx-icsoddatastore-pi1 .value {
+	float:left;
+	width:31em;
+}
+
+div.tx-icsoddatastore-pi1 .label.intro {
+	width:100%;
+}
+
+div.tx-icsoddatastore-pi1 .separator {
+	clear:both;
+	float:left;
+	width:100%;	
+}
+
+div.tx-icsoddatastore-pi1 .separator p.label {
+	margin:0.5em 0 0.5em 0.75em;
+}
+
+div.tx-icsoddatastore-pi1 .separator p.label.intro {
+	margin-left:0em;
+}
+
+div.tx_icsoddatastore_pi1_single h3{
+
+}
+
+div.tx-icsoddatastore-pi1 .separator p.value,
+div.tx-icsoddatastore-pi1 .separator p.listValue {
+	color:#6c6c6c;
+}
+
+div.tx_icsoddatastore_pi1_single div.tx_icsoddatastore_pi1_left {
+	float:left;
+	width:73%;
+}
+
+div.tx_icsoddatastore_pi1_single div.tx_icsoddatastore_pi1_right {
+	float:right;
+}
+
+div.tx_icsoddatastore_pi1_pictoItem {
+	text-align:center;
+	margin:0.25em 0 0.25em 0;
+}
+
+div.tx_icsoddatastore_pi1_fileSize {
+	font-size:0.8em;
+	color:#818181;
+}
+
+div.tx_icsoddatastore_pi1_backlink {
+	float:left;
+	width:100%;
+	text-align:right;	
+	margin-bottom:1em;
+}
+
+.detail_link h3{
+	color:#68B0BA;
+	margin:0;
+	font-size:1em;
+}
+
+.detail_link {
+	text-decoration:none;
+}
+
+.detail_link:hover,
+.detail_link h3:hover {
+	text-decoration:underline;
+}
+
+.tx_icsoddatastore_pi1_list table td {
+	vertical-align:top;
+	padding:0.5em;
+	font-size:1em;
+}
+
+.tx_icsoddatastore_pi1_list table tr.odd {
+	background-color:#FFF;
+}
+
+.tx-icsoddatastore-pi1 {
+	margin-top:1em;
+	float:left;
+	width:100%;
+}
+
+div.tx_icsoddatastore_pi1_search,
+div.tx_icsoddatastore_pi1_list {
+	float:left;
+	width:100%;
+	clear:both;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color:#f2f2f2;
+}	
+
+div.tx_icsoddatastore_pi1_list {
+	margin-top:1.5em;
+}
+
+div.tx_icsoddatastore_pi1_search div.tx_icsoddatastore_pi1_left {
+	float:left;
+	width: 40%;
+	margin-right:2em;
+}
+
+div.tx_icsoddatastore_pi1_search div.tx_icsoddatastore_pi1_right {
+	float:left;
+	width: 40%;
+}
+
+div.tx-icsoddatastore-pi1 label {
+	font-size:0.8em;
+}
+
+div.tx_icsoddatastore_pi1_fileformat {
+	float:left;
+	width:100%;
+}
+
+div.tx_icsoddatastore_pi1_fileformatItem {
+	float:left;
+	width:auto;
+	margin-right:1em;
+}
+
+div.tx_icsoddatastore_pi1_fileformatBlock {
+	float:left;
+	width:100%;
+	/*height:6em;*/
+	height:5em;
+}
+
+div.tx_icsoddatastore_pi1_search div.tx_icsoddatastore_pi1_tiersItem {
+	float:left;
+	width:100%;
+	height:1.1em;
+}
+
+div.tx_icsoddatastore_pi1_search div.tx_icsoddatastore_pi1_tiers {
+	float:left;
+	width:100%;
+	background-color:#FFF;
+	color:#666666;
+	height:72px;
+	overflow:auto;
+	padding:5px;
+}
+
+h3.tx_icsoddatastore_pi1_titleFileType,
+h3.tx_icsoddatastore_pi1_keywords {
+	margin-top:0;
+}
+
+div.tx_icsoddatastore_pi1_keywords {
+	/*
+	height:4.5em;
+	padding:0.25em 1em 0.25em 0em;
+	*/
+	height:4em;
+}
+
+div.tx_icsoddatastore_pi1_search form {
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+div.tx-icsoddatastore-pi1 .button {
+	bottom:0;
+	position:absolute;
+	right:0;
+}
+
+h3.tx_icsoddatastore_pi1_titleFileType,
+h3.tx_icsoddatastore_pi1_titleTiers,
+h3.tx_icsoddatastore_pi1_keywords {
+	margin-bottom:0.25em;
+	font-size:0.8em;
+	color:#68B0BA;
+}
+
+div.tx-icsoddatastore-pi1 table  {
+	border:none;
+	
+}
+
+div.tx-icsoddatastore-pi1 table td {
+	border:none;
+}
+
+
+div.tx-icsoddatastore-pi1 table thead th {
+	border:none;
+	background-color: #1f5c7b;
+	padding:3px 30px 3px 10px;
+	color:#FFF;	
+	border-right: solid 1px;
+}
+div.tx-icsoddatastore-pi1 table thead th.tx_icsoddatastore_pi1_th_sort {
+	padding:3px 0px 3px 10px;
+}
+
+div.tx-icsoddatastore-pi1 th.tstamp,
+div.tx-icsoddatastore-pi1 th.odfiles {
+	width: 150px;
+}
+
+div.tx-icsoddatastore-pi1 th.publisher {
+	width: 300px;
+}
+
+
+a.tx_icsoddatastore_pi1_sortImg {
+	border: medium none;
+	float: right;
+	padding-right: 5px;
+}
+
+div.tx_icsoddatastore_pi1_rss {
+	float: right; 
+	margin-top: -2.5em;
+}
+
+/* For ratings */
+#contenu div.tx-ratings{
+	float: left;
+	clear: both;
+	position: relative;
+	width: 100%;
+}
+
+/* For comments*/
+div.tx-comments-comment-2 {
+	border: none;
+}
+	)
+}
+
+
+# Comments
+plugin.tx_comments_pi1.prefixToTableMap.tx_icsoddatastore_pi1 = tx_icsoddatastore_filegroups
+plugin.tx_comments_pi1.showUidMap.tx_icsoddatastore_pi1 = uid
+# Ratings
+plugin.tx_icsoddatastore_pi1.ratings = 1

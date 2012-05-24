@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Id: locallang.xml 48432 2011-06-07 09:27:20Z emilieprudhomme $ -->
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_icsodappstore_pi4&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="user_connect">Any user are connected.</label>
+			<label index="application_not_exists">An error occured. The application was not found.</label>
+			<label index="titre">Applications</label>
+			<label index="name">Application</label>
+			<label index="description">Description</label>
+			<label index="platform">Platform</label>
+			<label index="lookat">See</label>
+			<label index="application_not_exist">Application not exists.</label>
+			<label index="bad_ts">Error TypoScript.</label>
+			<label index="download_api">Download :</label>
+			<label index="screenshot">screenshot</label>
+			<label index="tx_icsodappstore_applications">opendata applications</label>
+			<label index="tx_icsodappstore_applications.apikey">the application's key</label>
+			<label index="tx_icsodappstore_applications.fe_cruser_id">frontend user</label>
+			<label index="tx_icsodappstore_applications.application">name of the application</label>
+			<label index="tx_icsodappstore_applications.description">description of the application</label>
+			<label index="tx_icsodappstore_applications.platform">platform</label>
+			<label index="tx_icsodappstore_applications.countcall">counter of use</label>
+			<label index="tx_icsodappstore_applications.max">max call of api</label>
+			<label index="tx_icsodappstore_applications.release_date">date of publication</label>
+			<label index="tx_icsodappstore_applications.logo">logo</label>
+			<label index="tx_icsodappstore_applications.screenshot">screenshot</label>
+			<label index="tx_icsodappstore_applications.link">link</label>
+			<label index="tx_icsodappstore_applications.update_date">date of update</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.0">unlock</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.1">lock</label>
+			<label index="tx_icsodappstore_applications.lock_publication">lock a publication</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="user_connect">Veuillez vous identifier</label>
+			<label index="application_not_exists">L'application spécifiée n'a pas été trouvée.</label>
+			<label index="titre">Liste des applications</label>
+			<label index="name">Application</label>
+			<label index="description">Description</label>
+			<label index="platform">Plateforme</label>
+			<label index="lookat">Voir</label>
+			<label index="application_not_exist">L'application n'existe pas.</label>
+			<label index="bad_ts">Erreur TypoScript.</label>
+			<label index="download_api">Téléchargement :</label>
+			<label index="screenshot">capture</label>
+			<label index="tx_icsodappstore_applications">Applications</label>
+			<label index="tx_icsodappstore_applications.apikey">Clé de l'application</label>
+			<label index="tx_icsodappstore_applications.fe_cruser_id">Utilisateur</label>
+			<label index="tx_icsodappstore_applications.application">Nom de l'application</label>
+			<label index="tx_icsodappstore_applications.description">Description de l'application</label>
+			<label index="tx_icsodappstore_applications.platform">Plateforme</label>
+			<label index="tx_icsodappstore_applications.countcall">Les plus téléchargées</label>
+			<label index="tx_icsodappstore_applications.max">Nombre maximum d'appel de l'api</label>
+			<label index="tx_icsodappstore_applications.release_date">Les plus récentes</label>
+			<label index="tx_icsodappstore_applications.logo">Logo</label>
+			<label index="tx_icsodappstore_applications.screenshot">Capture d'écran</label>
+			<label index="tx_icsodappstore_applications.link">Lien</label>
+			<label index="tx_icsodappstore_applications.update_date">Date de mise à jour</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.0">Ouvert</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.1">Fermé</label>
+			<label index="tx_icsodappstore_applications.lock_publication">Verrou de publication</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="fr" type="array">
+			<label index="user_connect" type="integer">259484799</label>
+			<label index="application_not_exists" type="integer">153520458</label>
+			<label index="titre" type="integer">31322931</label>
+			<label index="name" type="integer">239699785</label>
+			<label index="description" type="integer">190479069</label>
+			<label index="platform" type="integer">68809588</label>
+			<label index="lookat" type="integer">83832433</label>
+			<label index="application_not_exist" type="integer">238441044</label>
+			<label index="bad_ts" type="integer">41346867</label>
+			<label index="download_api" type="integer">220474074</label>
+			<label index="tx_icsodappstore_applications" type="integer">232455661</label>
+			<label index="tx_icsodappstore_applications.apikey" type="integer">35158676</label>
+			<label index="tx_icsodappstore_applications.fe_cruser_id" type="integer">120672153</label>
+			<label index="tx_icsodappstore_applications.application" type="integer">252074287</label>
+			<label index="tx_icsodappstore_applications.description" type="integer">201984723</label>
+			<label index="tx_icsodappstore_applications.platform" type="integer">55209565</label>
+			<label index="tx_icsodappstore_applications.countcall" type="integer">121348594</label>
+			<label index="tx_icsodappstore_applications.max" type="integer">148863966</label>
+			<label index="tx_icsodappstore_applications.release_date" type="integer">139059139</label>
+			<label index="tx_icsodappstore_applications.logo" type="integer">158166830</label>
+			<label index="tx_icsodappstore_applications.screenshot" type="integer">103584442</label>
+			<label index="tx_icsodappstore_applications.link" type="integer">44237985</label>
+			<label index="tx_icsodappstore_applications.update_date" type="integer">100495025</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.0" type="integer">74773445</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.1" type="integer">231636033</label>
+			<label index="tx_icsodappstore_applications.lock_publication" type="integer">145077888</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="fr" type="array">
+			<label index="user_connect">Any user are connected.</label>
+			<label index="application_not_exists">An error occured. The application was not found.</label>
+			<label index="titre">Applications</label>
+			<label index="name">Application</label>
+			<label index="description">Description</label>
+			<label index="platform">Platform</label>
+			<label index="lookat">See</label>
+			<label index="application_not_exist">Application not exists.</label>
+			<label index="bad_ts">Error TypoScript.</label>
+			<label index="download_api">Download :</label>
+			<label index="tx_icsodappstore_applications">opendata applications</label>
+			<label index="tx_icsodappstore_applications.apikey">the application's key</label>
+			<label index="tx_icsodappstore_applications.fe_cruser_id">frontend user</label>
+			<label index="tx_icsodappstore_applications.application">name of the application</label>
+			<label index="tx_icsodappstore_applications.description">description of the application</label>
+			<label index="tx_icsodappstore_applications.platform">platform</label>
+			<label index="tx_icsodappstore_applications.countcall">counter of use</label>
+			<label index="tx_icsodappstore_applications.max">max call of api</label>
+			<label index="tx_icsodappstore_applications.release_date">date of publication</label>
+			<label index="tx_icsodappstore_applications.logo">logo</label>
+			<label index="tx_icsodappstore_applications.screenshot">screenshot</label>
+			<label index="tx_icsodappstore_applications.link">link</label>
+			<label index="tx_icsodappstore_applications.update_date">date of update</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.0">unlock</label>
+			<label index="tx_icsodappstore_applications.lock_publication.I.1">lock</label>
+			<label index="tx_icsodappstore_applications.lock_publication">lock a publication</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

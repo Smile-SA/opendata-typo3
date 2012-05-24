@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_smileicsoddatastorerss_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="ff.configuration">Configuration</label>
+			<label index="ff.view">View :</label>
+			<label index="ff.view.highlighted">RSS - highlighted file groups</label>
+			<label index="ff.view.all">RSS - all file groups</label>
+			<label index="ff.templateFile">Template file :</label>
+			<label index="ff.limit">Limit :</label>
+			<label index="ff.datastorePid">Datastore page id :</label>
+		</languageKey>
+		<languageKey index="default" type="array">
+			<label index="ff.configuration">Configuration</label>
+			<label index="ff.view">Vue :</label>
+			<label index="ff.view.highlighted">RSS - données à mettre en avant</label>
+			<label index="ff.view.all">RSS - les dernières mises à jour</label>
+			<label index="ff.templateFile">Gabarit :</label>
+			<label index="ff.limit">Limite :</label>
+			<label index="ff.datastorePid">Datastore page id :</label>
+		</languageKey>
+	</data>
+</T3locallang>

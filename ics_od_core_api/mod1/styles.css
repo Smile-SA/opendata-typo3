@@ -1,0 +1,35 @@
+/*
+ * $Id: styles.css 48432 2011-06-07 09:27:20Z emilieprudhomme $ 
+ */
+
+#tx_icsodcoreapi_module1 .menu{
+	float:left;
+}
+
+#tx_icsodcoreapi_module1 .content{
+	float:left;
+}
+
+#tx_icsodcoreapi_module1 .cmdxml{
+	clear: both;
+}
+
+#tx_icsodcoreapi_module1 .description{
+	vertical-align: top;
+}
+
+#tx_icsodcoreapi_module1 .menu .image{
+	float: right;
+	border: none;
+}
+
+#tx_icsodcoreapi_module1 .menu p{
+	clear: both;
+}
+
+#tx_icsodcoreapi_module1 .values_content,
+#tx_icsodcoreapi_module1 .parameters_content{
+	padding-left: 1em;
+}
+
+

@@ -1,0 +1,20 @@
+/*
+ * $Id: documentationapi.css 48432 2011-06-07 09:27:20Z emilieprudhomme $ 
+ */
+
+
+.level0 {
+	padding-left: 2em;
+}
+.level1 {
+	padding-left: 2em;
+}
+.level2 {
+	padding-left: 2em;
+}
+.level3 {
+	padding-left: 2em;
+}
+table.parameters th, table.enums th {
+	vertical-align: top;
+}
