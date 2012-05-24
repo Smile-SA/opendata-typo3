@@ -1,4 +1,6 @@
-Ce package est composé de 7 extensions (les 3 premières sont celle d'In-Cité qui ont été modifiées) :
+Ce package est soumis à la licence GNU GPL v3 : http://www.gnu.org/licenses/
+
+Il est composé de 7 extensions (les 3 premières sont celle d'In-Cité qui ont été modifiées) :
 
 1/ ics_od_appstore :
 - Corrections de vulnérabilités du site aux injections SQL.
